@@ -1,0 +1,11 @@
+.social-links img{
+    width: 50px;
+    border-radius: 8px;
+}
+.social-links a{
+   text-decoration: none;
+}
+
+.social-links .gmail-icon {
+    width: 65px;
+}

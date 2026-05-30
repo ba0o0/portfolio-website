@@ -1,4 +1,22 @@
+
+.tooltip{
+    display: inline-flex;
+    width: fit-content;
+    height: fit-content;
+}
+
+/*Menu Lists*/
+.menu li > * {
+    background-color: rgb(3, 3, 27);
+}
+
+.menu li > *:hover {
+    background-color: rgb(1, 1, 15);
+}
+
+/*Social Links*/
 .social-links img{
+    display: inline;
     width: 50px;
     border-radius: 8px;
 }
@@ -8,12 +26,38 @@
 
 .social-links .gmail-icon {
     width: 65px;
+    display: inline
 }
+
+
+/*Programming Languages*/
 
 .programming-langs img{
     width: 85px;
+    object-fit: contain;
 }
 
-.programming-langs .cpp-icon{
-    width: 70px;
+.programming-langs ul{
+    gap: 10px;
 }
+
+.programming-langs li > * {
+  padding: 0;
+}
+
+/*Courses*/
+.courses summary{
+    width: 300px;
+    margin-top: 30px;
+    background-color: rgb(3, 3, 27);
+}
+.courses summary::after {
+  content: "▼";
+  margin-left: 10px;
+}
+.courses[open] summary::after {
+    content: "▲";
+}
+
+
+

@@ -1,9 +1,13 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" data-theme="night">
     <head>
         <meta charset="UTF-8">
         <meta name="Bao-Huan's Portfolio" content="This is the HTML for Bao-Huan's Portfolio">
         <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
+
         <title>Bao-Huan Tran's Portfolio</title>
 
     </head>
@@ -27,30 +31,60 @@
                     <img alt="last.fm" src="images/lastfm.png">
                 </a>
             </div>
-                <p>Hello and Welcome to my Portfolio! My name is Bao-Huan Tran , I am a student at UMBC studying Computer Science</p>
+                <p>Hello and Welcome to my Portfolio! My name is Bao-Huan Tran , I am a student at UMBC studying Computer Science.</p>
         </div>
         
         <div class="programming-langs">
             <h2>Programming Language</h2>
-            <a>
-                <img alt="Python" src="images/python.png">
-            </a>
-            <a>
-                <img alt="Java" src="images/java.png">
-            </a>
-            <a>
-                <img class="cpp-icon" alt="C++" src="images/C++.png">
-            </a>
-            <a>
-                <img alt="Assembly" src="images/assembly.png">
-            </a>
+            <ul class="menu menu-horizontal ">
+                <li> 
+                    <a class="tooltip tooltip-bottom" data-tip="Python">
+                        <img alt="Python" src="images/python.png">
+                    </a>
+                </li>
+                <li> 
+                    <a class="tooltip tooltip-bottom" data-tip="Java">
+                        <img alt="Java" src="images/java.png">
+                    </a>
+                </li>
+                <li> 
+                    <a class="tooltip tooltip-bottom" data-tip="C++">
+                        <img alt="C++" src="images/C++.svg"> 
+                    </a>
+                </li>
+                <li> 
+                    <a class="tooltip tooltip-bottom" data-tip="Assembly">
+                        <img alt="Assembly" src="images/assembly.png"> 
+                    </a>
+                </li>
+                <li>
+                    <a class="tooltip tooltip-bottom" data-tip="HTML">
+                        <img alt="HTML" src="images/html.png">
+                    </a>
+                </li>
+
+                <li>
+                    <a class="tooltip tooltip-bottom" data-tip="CSS">
+                        <img alt="CSS" src="images/css.png">
+                    </a>
+                </li>
+
+                <li>
+                    <a class="tooltip tooltip-bottom" data-tip="JavaScript">
+                        <img class="js-icon" alt="CSS" src="images/js.svg">
+                    </a>
+                </li>
+
+
+            </ul>
                 
         </div>
         
-        <div class="classes">
-            <h2>Relevant Classes</h3>
+        <details class="courses">
+            <summary class="btn m-1"><h2>Relevant Classes</h2></summary>
+
                 <h3>CMSC Classes</h3>
-                <div class="cmsc-classes"> 
+                <div class="cmsc-courses"> 
                     <ul>
                         <li>CMSC 201</li>
                         <li>CMSC 202</li>
@@ -66,7 +100,7 @@
                 </div>
 
                 <h3>Other Classes</h3>
-                <div class="alt-classes">
+                <div class="other-courses">
                     <ul>
                         <li>MATH 152</li>
                         <li>MATH 221</li>
@@ -74,11 +108,19 @@
                         <li>STAT 355</li>
                     </ul>
                 </div>
-        </div>
+        </details>
 
-        <div class="Projects">
+        <details class="Projects">
             
-        </div>
+            <h2>Projects</h2>
+            
+            <div class="vending-machine-project">
+                <h3>Vending Machine Inventory Tracker</h3>
+            </div>
+
+        </details>
+
+
     </body>
 
 </html>

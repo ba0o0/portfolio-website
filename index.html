@@ -6,36 +6,37 @@
         <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
         <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet">
-        <script src="https://cdn.tailwindcss.com"></script>
-
+        <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
         <title>Bao-Huan Tran's Portfolio</title>
 
     </head>
     <body>
         <div class="header">
-            <h1>Bao-Huan Tran's Portfolio</h1>
-            <div class="social-links">
-                <a href="https://mail.google.com/mail/?view=cm&to=bhtp2004@gmail.com" target="_blank"> 
-                    <img class="gmail-icon" alt="gmail" src="images/gmail.jpg">
-                </a>
-                <a href="https://github.com/ba0o0" target="_blank"> 
-                    <img alt="github" src="images/github.png">
-                </a>
-                <a href="https://www.linkedin.com/in/baohuantran/" target="_blank"> 
-                    <img alt="linkedin" src="images/linkedin.jpg">
-                </a>
-                <a href="https://open.spotify.com/user/12150782902?si=ce45be63a6c54abe" target="_blank"> 
-                    <img alt ="spotify" src ="images/spotify.jpg">
-                </a>
-                <a href="https://www.last.fm/user/ba0o0o" target="_blank">
-                    <img alt="last.fm" src="images/lastfm.png">
-                </a>
+            <div class="prose">
+                <h1>Bao-Huan Tran's Portfolio</h1>
+                <div class="social-links">
+                    <a href="https://mail.google.com/mail/?view=cm&to=bhtp2004@gmail.com" target="_blank"> 
+                        <img class="gmail-icon" alt="gmail" src="images/gmail.jpg">
+                    </a>
+                    <a href="https://github.com/ba0o0" target="_blank"> 
+                        <img alt="github" src="images/github.png">
+                    </a>
+                    <a href="https://www.linkedin.com/in/baohuantran/" target="_blank"> 
+                        <img alt="linkedin" src="images/linkedin.jpg">
+                    </a>
+                    <a href="https://open.spotify.com/user/12150782902?si=ce45be63a6c54abe" target="_blank"> 
+                        <img alt ="spotify" src ="images/spotify.jpg">
+                    </a>
+                    <a href="https://www.last.fm/user/ba0o0o" target="_blank">
+                        <img alt="last.fm" src="images/lastfm.png">
+                    </a>
+                </div>
+                    <p>Hello and Welcome to my Portfolio! My name is Bao-Huan Tran , I am a student at UMBC studying Computer Science.</p>
             </div>
-                <p>Hello and Welcome to my Portfolio! My name is Bao-Huan Tran , I am a student at UMBC studying Computer Science.</p>
         </div>
         
         <div class="programming-langs">
-            <h2>Programming Language</h2>
+            <div class="prose"><h2>Programming Languages</h2></div>
             <ul class="menu menu-horizontal ">
                 <li> 
                     <a class="tooltip tooltip-bottom" data-tip="Python">
@@ -82,45 +83,52 @@
         
         <details class="courses">
             <summary class="btn m-1"><h2>Relevant Classes</h2></summary>
+                <div class="prose">
+                    <a class="link link-primary" style="color:#00b6ee" target="_blank" href="https://catalog.umbc.edu/search_advanced.php?cur_cat_oid=40&ecpage=1&cpage=1&ppage=1&pcpage=1&spage=1&tpage=1&search_database=Search&filter%5Bkeyword%5D=CMSC+201+-+Computer+Science+I&filter%5B3%5D=1&filter%5B31%5D=1">
+                        UMBC Course Catalog 
+                    </a>
 
-                <h3>CMSC Classes</h3>
-                <div class="cmsc-courses"> 
-                    <ul>
-                        <li>CMSC 201</li>
-                        <li>CMSC 202</li>
-                        <li>CMSC 203</li>
-                        <li>CMSC 341</li>
-                        <li>CMSC 331</li>
-                        <li>CMSC 313</li>
-                        <li>CMSC 411</li>
-                        <li>CMSC 426</li>
-                        <li>CMSC 447</li>
-                        <li>CMSC 449</li>
-                    </ul>
-                </div>
+                    <h3>CMSC Classes</h3>
+                    <div class="cmsc-courses"> 
+                        <ul>
+                            <li>CMSC 201 - Computer Science I</li>
+                            <li>CMSC 202 - Computer Science II </li>
+                            <li>CMSC 203 - Discrete Structures</li>
+                            <li>CMSC 313 - Computer Organization and Assembly Language Programming</li>
+                            <li>CMSC 331 - Principles of Programming Language</li>
+                            <li>CMSC 341 - Data Structures</li>
+                            <li>CMSC 411 - Computer Architecture</li>
+                            <li>CMSC 421 - Principles of Operating Systems</li>
+                            <li>CMSC 426 - Principles of Computer Security</li>
+                            <li>CMSC 438 - Graphics for Games</li>
+                            <li>CMSC 441 - Design and Analysis of Algorithms</li>
+                            <li>CMSC 447 - Software Engineering I</li>
+                            <li>CMSC 449 - Malware Analysis</li>
+                        </ul>
+                    </div>
 
-                <h3>Other Classes</h3>
-                <div class="other-courses">
-                    <ul>
-                        <li>MATH 152</li>
-                        <li>MATH 221</li>
-                        <li>PHYS 122</li>
-                        <li>STAT 355</li>
-                    </ul>
+                    <h3>Other Classes</h3>
+                    <div class="other-courses">
+                        <ul>
+                            <li>MATH 152 - Calculus and Analytic Geometry II </li>
+                            <li>MATH 221 - Introduction to Linear Algebra </li>
+                            <li>PHYS 122 - Introductory Physics II: Electricity and Magnetism</li>
+                            <li>STAT 355 - Introduction to Probability and Statistics for Scientists and Engineers</li>
+                        </ul>
+                    </div>
                 </div>
         </details>
 
-        <details class="Projects">
-            
-            <h2>Projects</h2>
-            
-            <div class="vending-machine-project">
-                <h3>Vending Machine Inventory Tracker</h3>
-            </div>
+        <details class="projects">
+                <summary class ="btn m-1"><h2>Projects</h2> </summary>
+                    <div class="prose">
+                        <div class="vending-machine-project">
+                            <h3>Vending Machine Inventory Tracker</h3>
+                        </div>
 
+                    </div>
         </details>
 
-
+        <script src="js/"></script>
     </body>
-
 </html>

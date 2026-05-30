@@ -1,10 +1,48 @@
 
-.tooltip{
-    display: inline-flex;
-    width: fit-content;
-    height: fit-content;
+
+/*Drop Downs*/
+details summary::after {
+  content: "▼";
+  margin-left: 10px;
+}
+details[open] summary::after {
+    content: "▲";
+}
+summary{
+    width: 100%;
+    margin-top: 30px;
+    background-color: rgb(2, 2, 24);
 }
 
+/*prose Text and Headers*/
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.prose {
+  max-width: 100%;
+  text-align: center;
+}
+.prose h1{
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.programming-langs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.prose h2{
+    text-align: center;
+}
+
+.prose p{
+    margin-top: 0;
+}
 /*Menu Lists*/
 .menu li > * {
     background-color: rgb(3, 3, 27);
@@ -46,18 +84,25 @@
 }
 
 /*Courses*/
-.courses summary{
-    width: 300px;
-    margin-top: 30px;
-    background-color: rgb(3, 3, 27);
+.courses{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
-.courses summary::after {
-  content: "▼";
-  margin-left: 10px;
+.cmsc-courses ul, .other-courses ul {
+    text-align: center;
 }
-.courses[open] summary::after {
-    content: "▲";
+
+/*Projects*/
+.projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
+
+
 
 
 

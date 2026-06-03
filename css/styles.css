@@ -110,9 +110,7 @@ summary{
   align-items: center;
   width: 100%;
 }
-.prose h2{
-    text-align: center;
-}
+
 
 .prose p{
     margin-top: 0;
@@ -128,6 +126,7 @@ summary{
     background-color: rgb(1, 1, 15);
 }
 
+
 section{
     min-height: 100vh;
     padding: 8rem 12%;
@@ -139,6 +138,7 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-bottom: 0;
 }
 .about .about-container{ 
    display: flex;
@@ -155,7 +155,7 @@ section{
     display: flex;
     flex-direction: column;
 }
-/*ABOUT:Social Links*/
+/*ABOUT: Social Links */
 .socials{
     display: flex;
     align-items: center;
@@ -189,7 +189,9 @@ section{
 
 
 /*Programming Languages*/
-
+.programming-langs{
+    margin-top: -100px;
+}
 .programming-langs img{
     width: 85px;
     object-fit: contain;

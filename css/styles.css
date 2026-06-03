@@ -63,6 +63,7 @@ li a::before{
 li a:hover::before{
     width: 100%;
 }
+
 .visit-btn{
     padding: 0.8rem 1.5rem;
     border-radius: 3rem;
@@ -100,15 +101,8 @@ summary{
 }
 
 /*prose Text and Headers*/
-.intro{ 
-  flex-direction: column;
-  display: flex;
-  align-items: center;
-  width: 100%;
-}
 .prose {
   max-width: 100%;
-  text-align: center;
 }
 .programming-langs {
   display: flex;
@@ -126,27 +120,72 @@ summary{
 /*Menu Lists*/
 .menu li > * {
     background-color: rgb(3, 3, 27);
+    width: 75%;
+    gap: 10px;
 }
 
 .menu li > *:hover {
     background-color: rgb(1, 1, 15);
 }
 
-/*Social Links*/
-.social-links img{
-    display: inline;
+section{
+    min-height: 100vh;
+    padding: 8rem 12%;
+    width: 100%;
+    position: relative;
+}
+/*ABOUT*/
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about .about-container{ 
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 10rem;
+}
+.bao-img{
+    width: 30vw;
+    border-radius: 50%;
+}
+
+.info-box{
+    display: flex;
+    flex-direction: column;
+}
+/*ABOUT:Social Links*/
+.socials{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.socials img{
     width: 50px;
     border-radius: 8px;
-    margin-top: 200px;
-
 }
-.social-links a{
+.socials a{
    text-decoration: none;
 }
 
-.social-links .gmail-icon {
+.spotify-icon img{
+   width: 52px;
+}
+
+.gmail-icon img{
     background-color: white;
 }
+
+.lastfm{
+    margin-top: 40px;
+}
+.lastfm img {
+  width: 1000px !important;
+  max-width: 600px !important;
+  height: auto !important;
+}
+
 
 
 /*Programming Languages*/
@@ -157,7 +196,7 @@ summary{
 }
 
 .programming-langs ul{
-    gap: 10px;
+    gap: 5px;
 }
 
 .programming-langs li > * {

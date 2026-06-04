@@ -133,14 +133,15 @@ section{
     width: 100%;
     position: relative;
 }
-/*ABOUT*/
-.about{
+
+/*HOME*/
+.home{
     display: flex;
     align-items: center;
     justify-content: center;
     padding-bottom: 0;
 }
-.about .about-container{ 
+.home .home-container{ 
    display: flex;
    align-items: center;
    justify-content: center;
@@ -155,7 +156,7 @@ section{
     display: flex;
     flex-direction: column;
 }
-/*ABOUT: Social Links */
+/*HOME: Social Links */
 .socials{
     display: flex;
     align-items: center;

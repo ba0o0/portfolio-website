@@ -197,39 +197,65 @@ section{
     padding-bottom: 0;
 }
 .about .about-container{ 
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   gap: 10rem;
+    display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  gap: 4rem;
 }
-
-.about-imgs ul{
-    display: flex !important;
-    list-style: none !important;
-    margin: 10 !important;
-}
-.about-imgs li{
-    display: inline !important;
-}
-.about-imgs img{
-    width: 250px;
-}
-.about-imgs .hibike-img{
-    width: 250px;
-    height: 235px;
-}
-.about-imgs .nier-img{
-    width: 250px;
-    height: 235px;
-}
-
 .about-text{
     display: flex;
     flex-direction: column;
-    margin-right: 3%;
+    margin-right: 100%;
+    width: 100%;
+}
+/*ABOUT: Images */
+
+.about-top-row{
+    margin-right: 20%;
+    margin-top: -250px;
+    width: 100%;
+}
+.about-imgs{
+    display: flex;
+    flex-wrap: nowrap;
+    height: 100%;
+    width: 100%;
+    gap: 5px;
+    
+}
+.about-imgs ul{
+    display: grid !important;
+    grid-template-columns: repeat(3, 300px) !important;
+    list-style: none !important;  
+    margin-left: 20%;
+    gap: 10px; 
+}
+.about-imgs li{
+    width: 100%;
+}
+.about-imgs img{
+    width: 225px;
+    border-radius: 8px
 }
 
 
+.about-bottom-row {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.pokemon-carousel {
+  cursor: pointer;
+  width: 200px;
+  flex-shrink: 0;
+}
+.pokemon-carousel img {
+  width: 200px !important;
+  height: auto;
+  object-fit: contain;
+}
 
 /*Programming Languages*/
 .programming-langs{

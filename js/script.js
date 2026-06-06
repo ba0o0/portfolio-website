@@ -14,3 +14,11 @@ setInterval(() => {
     'https://lastfm-recently-played.vercel.app/api?user=ba0o0o&count=1&width=500&height=1000' + Date.now();
 }, 10000); // updates every 30 seconds
 
+
+const pokemons = ['images/infernape.gif', 'images/turtwig.gif','images/riolu.gif'];
+let currentIndex = 0;
+
+function nextPokemon() {
+  currentIndex = (currentIndex + 1) % pokemons.length;
+  document.getElementById('pokemon-img').src = pokemons[currentIndex];
+}

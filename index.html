@@ -87,7 +87,7 @@
         <section id="about" class="about">
             <div class="about-container">
 
-                <div class="prose about-left">
+                <div class="prose">
                     <h2 class="section-title">About Me:</h2>
 
                     <div class="about-text">
@@ -95,9 +95,10 @@
                     </div>
                 </div>
 
-                <div class="about-right">
-                     <div class="about-imgs">
-                        <ul class="menu menu-horizontal ">
+                <div class="about-imgs">
+
+                    <div class="about-top-row">
+                        <ul class="menu menu-horizontal">
                             <li>
                                 <div class="prose">
                                     <h3>Favorite Game</h3>
@@ -117,22 +118,23 @@
                             </li>
                             <li>
                                 <div class="prose">
-                                    <h3>Favorite Artist</h3>
+                                    <h3>Favorite Movie</h3>
                                 </div>
-                                <a class="tooltip tooltip-bottom" data-tip="susquatch">
-                                    <img class="susquatch-img" alt="susquatch" src="images/susquatch.jpg">
+                                <a class ="tooltip tooltip-bottom" data-tip="Look Back">
+                                    <img class="lookback-img" alt="Look Back" src="images/lookback.jpg">
                                 </a>
                             </li>
                             <li>
                                 <div class="prose">
-                                    <h3>Favorite Album</h3>
+                                    <h3>Click Me</h3>
                                 </div>
-                                <a class ="tooltip tooltip-bottom" data-tip="Floral Green By Title Fight">
-                                    <img class="floral-green-img" alt="Floral Green By Title Fight" src="images/Floral_Green.jpg">
-                                </a>
-                            </li>
+                                <div class="pokemon-carousel" onclick="nextPokemon()">
+                                    <img id="pokemon-img" src="images/infernape.gif" alt="Pokemon">
+                                </div>
+                            </li>    
                         </ul>
                     </div>
+
                 </div>
             </div>
         </section>

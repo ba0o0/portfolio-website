@@ -5,7 +5,7 @@ gmailElement.href = myGmail;
 
 const wmbcURL = "https://wmbc.umbc.edu/";
 const linkText = "WMBC"
-const aboutText = `Hi I am Bao-Huan Tran. I am studying Computer Science at the University of Maryland Baltimore County. I have a passion for programming and game development. Outside of academics I work at a radio station <a href='${wmbcURL}' target='_blank'>${linkText}</a> as the events manager. I also enjoy playing video games, listening to music, watching anime and going to concerts.`;
+const aboutText = `Hi I am Bao-Huan Tran. I am studying Computer Science at the University of Maryland Baltimore County. I have a passion for programming and game development. Outside of academics I work at my schools radio station <a href='${wmbcURL}' target='_blank'>${linkText}</a> as the events manager. I also enjoy playing video games, listening to music, watching anime and going to concerts.`;
 document.getElementById("aboutText").innerHTML = aboutText;
 
 

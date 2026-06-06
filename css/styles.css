@@ -111,10 +111,10 @@ summary{
   width: 100%;
 }
 
-
 .prose p{
     margin-top: 0;
 }
+
 /*Menu Lists*/
 .menu li > * {
     background-color: rgb(3, 3, 27);
@@ -125,6 +125,7 @@ summary{
 .menu li > *:hover {
     background-color: rgb(1, 1, 15);
 }
+
 
 
 section{
@@ -202,10 +203,26 @@ section{
    gap: 10rem;
 }
 
+.about-imgs ul{
+    display: flex !important;
+    list-style: none !important;
+    margin: 0 !important;
+}
+.about-imgs li{
+    display: inline !important;
+}
+.about-imgs img{
+    width: 250px;
+}
+
 .about-text{
     display: flex;
     flex-direction: column;
+    margin-right: 50%;
 }
+
+
+
 /*Programming Languages*/
 .programming-langs{
     margin-top: -100px;

@@ -15,7 +15,9 @@ setInterval(() => {
 }, 10000); // updates every 30 seconds
 
 
-const pokemons = ['images/infernape.gif', 'images/turtwig.gif','images/riolu.gif'];
+const pokemons = ['images/pokemon/infernape.gif', 'images/pokemon/turtwig.gif','images/pokemon/riolu.gif',
+  'images/pokemon/garchomp.gif','images/pokemon/umbreon.gif','images/pokemon/wooper.gif',
+'images/pokemon/gliscor.gif','images/pokemon/gardevoir.gif','images/pokemon/luxio.gif','images/pokemon/giratina.gif'];
 let currentIndex = 0;
 
 function nextPokemon() {

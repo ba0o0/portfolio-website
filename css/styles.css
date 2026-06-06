@@ -239,6 +239,23 @@ section{
     width: 225px;
     border-radius: 8px
 }
+.about-imgs .nier-img{
+    height: 265px;
+    width: 245px;
+}
+.about-imgs .hibike-img{
+    height: 265px;
+    width: 245px;
+}
+.about-imgs .lookback-img{
+    height: 265px;
+    width: 245px;
+}
+.about-imgs .pokemon-carousel img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+}
 
 
 .about-bottom-row {

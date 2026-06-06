@@ -206,7 +206,7 @@ section{
 .about-imgs ul{
     display: flex !important;
     list-style: none !important;
-    margin: 0 !important;
+    margin: 10 !important;
 }
 .about-imgs li{
     display: inline !important;
@@ -214,11 +214,15 @@ section{
 .about-imgs img{
     width: 250px;
 }
+.about-imgs .hibike-img{
+    width: 230px;
+    height: 215px;
+}
 
 .about-text{
     display: flex;
     flex-direction: column;
-    margin-right: 50%;
+    margin-right: 3%;
 }
 
 

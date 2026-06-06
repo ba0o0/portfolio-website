@@ -215,8 +215,12 @@ section{
     width: 250px;
 }
 .about-imgs .hibike-img{
-    width: 230px;
-    height: 215px;
+    width: 250px;
+    height: 235px;
+}
+.about-imgs .nier-img{
+    width: 250px;
+    height: 235px;
 }
 
 .about-text{

@@ -198,11 +198,11 @@ section{
 }
 .about .about-container{ 
     display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: center;
-  width: 100%;
-  gap: 4rem;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    gap: 4rem;
 }
 .about-text{
     display: flex;
@@ -252,28 +252,23 @@ section{
     width: 245px;
 }
 .about-imgs .pokemon-carousel img {
-  width: 150px;
-  height: 150px;
-  object-fit: contain;
+  width: 125px;
+  height: 125px;
+  object-fit: contain !important;
+  margin-top: 30px;
+
 }
-
-
-.about-bottom-row {
-    display: flex;
-    justify-content: flex-start;
-}
-
 .pokemon-carousel {
   cursor: pointer;
-  width: 200px;
-  flex-shrink: 0;
+  width: 250px;
+  height: 213px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.pokemon-carousel img {
-  width: 200px !important;
-  height: auto;
-  object-fit: contain;
+.about-imgs .animate-bounce{
+    text-align: center;
 }
-
 /*Programming Languages*/
 .programming-langs{
     margin-top: -100px;

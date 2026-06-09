@@ -213,6 +213,41 @@ section{
 
 /*ABOUT: Images */
 
+.about-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.about-info .prose{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.about-socials{
+    padding: 0 !important;
+    margin: 0 !important;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1px;
+
+}
+.about-socials a{
+    padding-right: 0px;
+}
+.about-imgs{
+   
+}
+.about-socials .insta-img{
+    width: 180px !important;
+}
+.about-socials .anilist-img{
+    width: 75px;
+    border-radius: 22%;
+
+}
+
 .about-top-row{
     margin-right: 15%;
     margin-top: -250px;
@@ -270,6 +305,9 @@ section{
 .about-imgs .animate-bounce{
     text-align: center;
 }
+
+
+
 /*Programming Languages*/
 .programming-langs{
     margin-top: -100px;

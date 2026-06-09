@@ -204,16 +204,17 @@ section{
     width: 100%;
     gap: 4rem;
 }
-.about-text{
+.about .about-text{
     display: flex;
     flex-direction: column;
     margin-right: 100%;
-    width: 100%;
+    width: 110%;
 }
+
 /*ABOUT: Images */
 
 .about-top-row{
-    margin-right: 20%;
+    margin-right: 15%;
     margin-top: -250px;
     width: 100%;
 }
@@ -229,7 +230,7 @@ section{
     display: grid !important;
     grid-template-columns: repeat(3, 300px) !important;
     list-style: none !important;  
-    margin-left: 20%;
+    margin-left: 10%;
     gap: 10px; 
 }
 .about-imgs li{

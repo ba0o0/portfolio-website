@@ -234,18 +234,22 @@ section{
 
 }
 .about-socials a{
-    padding-right: 0px;
-}
-.about-imgs{
-   
-}
-.about-socials .insta-img{
-    width: 180px !important;
-}
-.about-socials .anilist-img{
-    width: 75px;
-    border-radius: 22%;
+    display: inline-flex;
+    width: fit-content !important;
+    padding: 0 !important;
+    margin: 0 !;
 
+}
+.about-socials{
+    gap: 10px;
+    margin-top: 25px !important;
+}
+.about-socials img{
+    width: 58px !important;
+    object-fit: contain;
+}
+.about-socials .anilist-img, .discog-img, .letterboxd-img{
+    border-radius: 22%;
 }
 
 .about-top-row{
@@ -259,7 +263,7 @@ section{
     height: 100%;
     width: 100%;
     gap: 5px;
-    
+    margin-top: 100px;
 }
 .about-imgs ul{
     display: grid !important;

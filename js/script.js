@@ -5,7 +5,7 @@ gmailElement.href = myGmail;
 
 const wmbcURL = "https://wmbc.umbc.edu/";
 const linkText = "WMBC"
-const aboutText = `Hi I am Bao-Huan Tran. I am studying Computer Science at the University of Maryland Baltimore County. I have a passion for programming and game development. Outside of academics I work at my schools radio station <a href='${wmbcURL}' target='_blank'>${linkText}</a> as the events manager. I enjoy playing video games, listening to music, watching anime and going to concerts. I also enjoy going to the gym and playing and watching sports.`;
+const aboutText = `Hi I am Bao-Huan Tran. I am studying Computer Science at the University of Maryland Baltimore County. I have a passion for programming and game development. Outside of academics I work at my schools radio station <a href='${wmbcURL}' target='_blank'>${linkText}</a> as the events manager. I enjoy playing video games, watching anime, listening to music, and going to concerts. I listen to a variety of music genres but some of my favorites are Shoegaze, Math Rock, Punk, Jazz Fusion, Shibuya-Kei also enjoy going to the gym and playing and watching sports. Follow my socials bellow:`;
 document.getElementById("aboutText").innerHTML = aboutText;
 
 

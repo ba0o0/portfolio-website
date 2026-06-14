@@ -315,18 +315,24 @@ section{
 
 
 /*EXPERIENCE: Programming Languages*/
+.programming-langs{
+    margin-top: 60px;
+}
+.programming-langs h2{
+    margin-bottom: 40px;
+}
 .programming-langs a{
     display: inline-flex;
     object-fit: contain;
 }
 .programming-langs img{
-    width: 120px;
+    width: 117px;
     height: 90px;
     object-fit: contain;
 }
 
 .programming-langs ul{
-    gap: 5px;
+    gap: 5px;   
 }
 
 .programming-langs li > * {
@@ -344,6 +350,59 @@ section{
     text-align: center;
 }
 
+/*EXPERIENCE: INFO*/
+.section-title-experience{
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+}
+.experience-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    margin-top: 50px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+}
+.grid-card{
+    border: 7px solid rgb(3, 3, 27);
+    border-radius: 3rem;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: left;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+.grid-card:hover{
+    transform: scale(1.02);
+    background-color: rgb(3, 3, 27);
+}
+.grid-card img{
+   width: 90px;
+}
+.grid-card span{
+    font-size: 1.5rem;
+    font-weight: 500;
+    background-color: rgb(255, 255, 255) ;
+    background-clip: text;
+    color: transparent;
+}
+::-webkit-scrollbar{
+    width: 20px;
+}
+::-webkit-scrollbar-track{
+    background-color: rgb(219,219,219);
+}
+::-webkit-scrollbar-thumb{
+    background-color: white;
+}
 
 
 

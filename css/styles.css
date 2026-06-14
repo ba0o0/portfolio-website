@@ -89,30 +89,12 @@ li a:hover::before{
 /*Drop Downs*/
 details summary::after {
   content: "▼";
-  margin-left: 10px;
 }
 details[open] summary::after {
     content: "▲";
 }
 summary{
-    width: 100%;
-    margin-top: 30px;
     background-color: rgb(2, 2, 24);
-}
-
-/*prose Text and Headers*/
-.prose {
-  max-width: 100%;
-}
-.programming-langs {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-}
-
-.prose p{
-    margin-top: 0;
 }
 
 /*Menu Lists*/
@@ -125,8 +107,6 @@ summary{
 .menu li > *:hover {
     background-color: rgb(1, 1, 15);
 }
-
-
 
 section{
     min-height: 100vh;
@@ -312,14 +292,60 @@ section{
 
 
 /*EXPERIENCE*/
-
+.section-title-experience{
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.section-title-experience .prose{
+    max-width: 100%;
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 600;
+}
+/*EXPERIENCE: Courses*/
+.experience-container .btn-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+#transcript-btn{
+    margin-right: 10px;
+    position: relative;
+}
+#courses-btn{
+    position: relative;
+}
+.courses-exp{
+    width: fit-content;
+}
+.courses-exp summary{
+    width: fit-content;
+    list-style: none;
+}
+.courses-exp[open] .prose{
+    position: relative;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    padding: 20px;
+    width: 600px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    width: fit-content;
+}
+.cmsc-courses ul, .other-courses ul {
+    text-align: center;
+}
 
 /*EXPERIENCE: Programming Languages*/
-.programming-langs{
-    margin-top: 60px;
-}
-.programming-langs h2{
-    margin-bottom: 40px;
+.programming-langs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 .programming-langs a{
     display: inline-flex;
@@ -332,6 +358,9 @@ section{
 }
 
 .programming-langs ul{
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    list-style: none;
     gap: 5px;   
 }
 
@@ -339,24 +368,7 @@ section{
   padding: 0;
 }
 
-/*EXPERIENCE: Courses*/
-.courses{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
-.cmsc-courses ul, .other-courses ul {
-    text-align: center;
-}
-
 /*EXPERIENCE: INFO*/
-.section-title-experience{
-    text-align: center;
-    font-size: 4rem;
-    font-weight: 600;
-    margin-bottom: 3rem;
-}
 .experience-info{
     display: flex;
     align-items: center;

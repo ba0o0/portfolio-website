@@ -85,6 +85,16 @@ li a:hover::before{
 
 }
 
+/*Scroll Bar*/
+::-webkit-scrollbar{
+    width: 20px;
+}
+::-webkit-scrollbar-track{
+    background-color: rgb(219,219,219);
+}
+::-webkit-scrollbar-thumb{
+    background-color: white;
+}
 
 /*Drop Downs*/
 details summary::after {
@@ -406,16 +416,45 @@ section{
     background-clip: text;
     color: transparent;
 }
-::-webkit-scrollbar{
-    width: 20px;
+
+/*PROJECTS*/
+
+.project-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+    margin-top: 60px;
 }
-::-webkit-scrollbar-track{
-    background-color: rgb(219,219,219);
+.project-card{
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1.5rem;
+    border: 3px solid rgb(3, 3, 27);
+    border-radius: 3rem;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    width: 100%;
 }
-::-webkit-scrollbar-thumb{
-    background-color: white;
+.project-card:hover{
+    background-color:  rgb(3, 3, 27);
+    color: white;
+    transform: translateY(-10px);
+}
+.project-card img{
+    width: 20vw;
+    border-radius: 1rem;
+}
+.project-card:hover .btn{
+    border: 2px solid white;
+    color: white;
 }
 
-
-
+.project-card:hover .btn:hover{
+    border: 2px solid white;
+    transform: scale(1.02);
+}
 

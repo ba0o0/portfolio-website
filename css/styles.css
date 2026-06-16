@@ -63,7 +63,9 @@ li a::before{
 li a:hover::before{
     width: 100%;
 }
-
+.btn{
+    background-color: rgb(183, 183, 201);
+}
 .visit-btn{
     padding: 0.8rem 1.5rem;
     border-radius: 3rem;
@@ -201,7 +203,7 @@ section{
     width: 110%;
 }
 
-/*ABOUT: Images */
+/*ABOUT: Info */
 
 .about-info {
     display: flex;
@@ -242,6 +244,7 @@ section{
     border-radius: 22%;
 }
 
+/*ABOUT: Images */
 .about-top-row{
     margin-right: 15%;
     margin-top: -250px;
@@ -263,7 +266,12 @@ section{
     gap: 10px; 
 }
 .about-imgs li{
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
     width: 100%;
+}
+.about-imgs li:hover{
+    transform: scale(105%);
 }
 .about-imgs img{
     width: 225px;
@@ -337,12 +345,11 @@ section{
 }
 .courses-exp[open] .prose{
     position: relative;
-    top: 100%;
     left: 50%;
     transform: translateX(-50%);
     z-index: 1000;
-    padding: 20px;
-    width: 600px;
+    padding: 0;
+    width: 25px;
     box-shadow: 0 4px 20px rgba(0,0,0,0.5);
     width: fit-content;
 }
@@ -446,6 +453,11 @@ section{
 }
 .fa-github{
     margin-right: 10px;
+    transition: 0.2s ease-in-out;
+}
+.fa-github:hover{
+    transform: scale(110%);
+    filter: brightness(150%);
 }
 .project-card img{
     width: 20vw;
@@ -477,11 +489,14 @@ section{
 .project-card .protfolio-img{
     border: 6px solid black;
 }
+.project-card .flight-nav-img{
+    width: 17vw;
+    border-radius: 9px;
+}
 .project-card:hover .btn{
     border: 2px solid white;
     color: white;
 }
-
 .project-card:hover .btn:hover{
     border: 2px solid white;
     transform: scale(1.02);

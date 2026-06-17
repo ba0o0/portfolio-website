@@ -455,6 +455,9 @@ section{
     margin-right: 10px;
     transition: 0.2s ease-in-out;
 }
+.solo-github-i .fa-github{
+    margin: 0;
+}
 .fa-github:hover{
     transform: scale(110%);
     filter: brightness(150%);

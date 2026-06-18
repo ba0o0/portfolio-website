@@ -1,0 +1,53 @@
+/*HOME*/
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 0;
+}
+.home .home-container{ 
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 10rem;
+}
+.bao-img{
+    width: 30vw;
+    border-radius: 50%;
+}
+
+.info-box{
+    display: flex;
+    flex-direction: column;
+}
+/*HOME: Social Links */
+.socials{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.socials img{
+    width: 50px;
+    border-radius: 8px;
+}
+.socials a{
+   text-decoration: none;
+}
+
+.spotify-icon img{
+   width: 52px;
+}
+
+.gmail-icon img{
+    background-color: white;
+}
+
+.lastfm{
+    margin-top: 40px;
+}
+.lastfm img {
+  width: 1000px !important;
+  max-width: 600px !important;
+  height: auto !important;
+}

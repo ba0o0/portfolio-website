@@ -1,0 +1,114 @@
+/*EXPERIENCE*/
+.section-title-experience{
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.section-title-experience .prose{
+    max-width: 100%;
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 600;
+}
+/*EXPERIENCE: Courses*/
+.experience-container .btn-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+#transcript-btn{
+    margin-right: 10px;
+    position: relative;
+}
+#courses-btn{
+    position: relative;
+}
+.courses-exp{
+    width: fit-content;
+}
+.courses-exp summary{
+    width: fit-content;
+    list-style: none;
+}
+.courses-exp[open] .prose{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    padding: 0;
+    width: 25px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    width: fit-content;
+}
+.cmsc-courses ul, .other-courses ul {
+    text-align: center;
+}
+
+/*EXPERIENCE: Programming Languages*/
+.programming-langs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.programming-langs a{
+    display: inline-flex;
+    object-fit: contain;
+}
+.programming-langs img{
+    width: 117px;
+    height: 90px;
+    object-fit: contain;
+}
+
+.programming-langs ul{
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    list-style: none;
+    gap: 5px;   
+}
+
+.programming-langs li > * {
+  padding: 0;
+}
+
+/*EXPERIENCE: INFO*/
+.experience-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    margin-top: 50px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+}
+.grid-card{
+    border: 7px solid rgb(3, 3, 27);
+    border-radius: 3rem;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: left;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+.grid-card:hover{
+    transform: scale(1.02);
+    background-color: rgb(3, 3, 27);
+}
+.grid-card img{
+   width: 90px;
+}
+.grid-card span{
+    font-size: 1.5rem;
+    font-weight: 500;
+    background-color: rgb(255, 255, 255) ;
+    background-clip: text;
+    color: transparent;
+}

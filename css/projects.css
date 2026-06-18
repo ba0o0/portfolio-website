@@ -25,14 +25,14 @@
     color: white;
     transform: translateY(-10px);
 }
-.fa-github{
+.project-card .fa-github{
     margin-right: 10px;
     transition: 0.2s ease-in-out;
 }
-.solo-github-i .fa-github{
+.project-card .solo-github-i .fa-github{
     margin: 0;
 }
-.fa-github:hover{
+.project-card .fa-github:hover{
     transform: scale(110%);
     filter: brightness(150%);
 }

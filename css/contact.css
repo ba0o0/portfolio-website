@@ -22,7 +22,7 @@
 .input i{
     position: absolute;
     font-size: 4rem;
-    top: 151%;
+    top: 150%;
     left: 10px;
     transform: translate(50%, -50%);
 }

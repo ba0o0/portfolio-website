@@ -27,18 +27,21 @@ function nextPokemon() {
   currentIndex = (currentIndex + 1) % pokemons.length;
   if(shinyNum == 8){
     numOfShiny++;
+    document.getElementById('pokemon-header').style.fontSize ="larger";
     document.getElementById('pokemon-header').style.color = "yellow";
     document.getElementById('pokemon-footer').innerText = "Shiny Pokemon: " + numOfShiny;
     document.getElementById('pokemon-footer').style.color = "white";
     document.getElementById('pokemon-img').src = shinyPokemons[currentIndex];
     document.getElementById('pokemon-header').innerText = "SHINY !!!";
     if (currentIndex == 3){
-     document.getElementById('pokemon-header').innerText = "SHINY !!! (yes this is the shiny lol)";
+      document.getElementById('pokemon-header').innerText = "SHINY !!! (yes this is the shiny lol)";
+      document.getElementById('pokemon-header').style.fontSize ="80%";
     }
   }
   else{
     document.getElementById('pokemon-img').src = pokemons[currentIndex];
     document.getElementById('pokemon-header').innerText = "Click Me ⇩";
     document.getElementById('pokemon-header').style.color = "white";
+    document.getElementById('pokemon-header').style.fontSize ="larger";
   }
 }

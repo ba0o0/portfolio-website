@@ -3,13 +3,12 @@
     text-align: center;
     font-weight: 600;
     margin-bottom: 20px;
-}
-.section-title-experience .prose{
     max-width: 100%;
     width: 100%;
     font-size: 2rem;
     font-weight: 600;
 }
+
 /*EXPERIENCE: Courses*/
 .experience-container .btn-group{
     display: flex;
@@ -53,6 +52,9 @@
   align-items: center;
   width: 100%;
 }
+.programming-langs h2{
+    margin-bottom: 25px;
+}
 .programming-langs a{
     display: inline-flex;
     object-fit: contain;
@@ -62,16 +64,22 @@
     height: 90px;
     object-fit: contain;
 }
-
 .programming-langs ul{
     display: grid;
     grid-template-columns: repeat(11, 1fr);
     list-style: none;
-    gap: 5px;   
+    gap: 15px;   
 }
-
 .programming-langs li > * {
-  padding: 0;
+    padding: 0.0001;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.programming-langs li{
+    transition: 0.2s ease-in-out;
+}
+.programming-langs li:hover{
+    transform: scale(1.1);
 }
 
 /*EXPERIENCE: INFO*/

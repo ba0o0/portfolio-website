@@ -152,11 +152,15 @@
                             </li>
                             <li>
                                 <div class="prose">
-                                    <span class="animate-bounce">Click Me ⇩</span>
+                                    <span id="pokemon-header" class="animate-bounce">Click Me ⇩</span>
                                 </div>
                                 <div class="pokemon-carousel" onclick="nextPokemon()">
                                     <img id="pokemon-img" src="images/pokemon/infernape.gif" alt="Pokemon">
                                 </div>
+                                <div id ="pokemon-footer"class="prose">
+                                    <p style="color: white">Shiny Pokemon: 0</p>
+                                </div>
+
                             </li>
                             <li>
                                 <div class="prose">
@@ -184,9 +188,7 @@
         <section id="experience" class="experience">
             <div class="experience-container">
                 <div class= "section-title-experience">
-                    <div class="prose">
-                        <h2>Experience</h2>
-                    </div>
+                    <h2>Experience</h2>
                 </div>
 
                 <div class="btn-group">
@@ -465,15 +467,21 @@
         <section class="contact" id="contact">
             <div class="input-box">
                 <div class="prose">
-                    <h1 class="section-title">Contact Me</h1>
+                            <h1 class="section-title">Contact Me</h1>
                 </div>
+                <ul>
+                    <li>
 
-                <div class="input">
-                    <input type="text" placeholder="example@email.com">
-                    <i class="fa-regular fa-envelope"></i>
-                </div>
-
-                <div class="btn">Submit</div>
+                        <div class="input">
+                            <input type="text" placeholder="example@email.com">
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="btn">Submit</div>
+                    </li>
+                </ul>
+                    
             </div>
         </section>
         

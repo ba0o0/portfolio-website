@@ -67,6 +67,13 @@
     margin-top: -250px;
     width: 100%;
 }
+.about-top-row h3{
+    color: white;
+}
+#pokemon-header{
+    color: white;
+    font-size: larger;
+}
 .about-imgs{
     display: flex;
     flex-wrap: nowrap;

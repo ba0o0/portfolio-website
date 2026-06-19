@@ -10,12 +10,35 @@ setInterval(() => {
 }, 10000); // updates every 30 seconds
 
 
+
+// Pokemon
 const pokemons = ['images/pokemon/infernape.gif', 'images/pokemon/turtwig.gif','images/pokemon/riolu.gif',
   'images/pokemon/garchomp.gif','images/pokemon/umbreon.gif','images/pokemon/wooper.gif',
 'images/pokemon/gliscor.gif','images/pokemon/gardevoir.gif','images/pokemon/luxio.gif','images/pokemon/giratina.gif'];
-let currentIndex = 0;
 
+const shinyPokemons = ['images/shiny-pokemon/infernape.gif', 'images/shiny-pokemon/turtwig.gif','images/shiny-pokemon/riolu.gif',
+  'images/shiny-pokemon/garchomp.gif','images/shiny-pokemon/umbreon.gif','images/shiny-pokemon/wooper.gif',
+'images/shiny-pokemon/gliscor.gif','images/shiny-pokemon/gardevoir.gif','images/shiny-pokemon/luxio.gif','images/shiny-pokemon/giratina.gif'];
+
+var currentIndex = 0;
+let numOfShiny = 0;
 function nextPokemon() {
+  var shinyNum = Math.floor(Math.random()* 10);
   currentIndex = (currentIndex + 1) % pokemons.length;
-  document.getElementById('pokemon-img').src = pokemons[currentIndex];
+  if(shinyNum == 8){
+    numOfShiny++;
+    document.getElementById('pokemon-header').style.color = "yellow";
+    document.getElementById('pokemon-footer').innerText = "Shiny Pokemon: " + numOfShiny;
+    document.getElementById('pokemon-footer').style.color = "white";
+    document.getElementById('pokemon-img').src = shinyPokemons[currentIndex];
+    document.getElementById('pokemon-header').innerText = "SHINY !!!";
+    if (currentIndex == 3){
+     document.getElementById('pokemon-header').innerText = "SHINY !!! (yes this is the shiny lol)";
+    }
+  }
+  else{
+    document.getElementById('pokemon-img').src = pokemons[currentIndex];
+    document.getElementById('pokemon-header').innerText = "Click Me ⇩";
+    document.getElementById('pokemon-header').style.color = "white";
+  }
 }

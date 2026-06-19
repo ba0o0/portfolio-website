@@ -63,7 +63,10 @@ li a:hover::before{
 
 /*Buttons*/
 .btn{
-    background-color: rgb(183, 183, 201);
+    background-color:  rgb(3, 3, 27)!important;
+}
+.btn:hover{
+    background-color: rgb(1, 1, 15)!important;
 }
 .visit-btn{
     padding: 0.8rem 1.5rem;
@@ -77,13 +80,12 @@ li a:hover::before{
     background-color: rgb(3, 3, 27);
 }
 .visit-btn:hover{
-    transform: scale(1.03)
+    transform: scale(1.03);
 }
 
 #menu-icon{
     font-size: 2rem;
     display: none;
-
 }
 
 /*Scroll Bar*/
@@ -114,11 +116,11 @@ summary{
     width: 75%;
     gap: 10px;
 }
-
 .menu li > *:hover {
     background-color: rgb(1, 1, 15);
 }
 
+/*Sections*/
 section{
     min-height: 100vh;
     padding: 8rem 12%;
@@ -126,4 +128,4 @@ section{
     position: relative;
 }
 
-
+/*Responsive*/

@@ -37,8 +37,11 @@
 
 #contact ul {
     display: flex;
-    gap: 10px;
+    gap: 30px;
 }
 #contact li{
     display: inline-block;
+}
+#contact .btn{
+    scale: 120%;
 }

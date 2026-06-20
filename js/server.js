@@ -1,6 +1,11 @@
 const express = require('express');
+const cors = require('cors');
 const app = express();
 const PORT =  8080;
+
+app.use(express.json());
+app.use(cors());
+
 
 app.get('/', (req,res) => {
     res.send("GET: Hello from Express");
@@ -35,10 +40,12 @@ app.use(express.urlencoded({ extended: true }));
 
 app.post('/contact', (req, res) => {
     const email = req.body.email;
-    console.log('Email recieved' , email);
+    console.log('Email recieved:' , email);
 
-    res.send('Email submitted successfully!')
+    res.json({message: 'Thanks for reaching out! I\'ll get back to you soon.'});
 });
+
+
 
 app.listen(PORT, () => {    
     console.log("Backend Server is running on port: 8080");

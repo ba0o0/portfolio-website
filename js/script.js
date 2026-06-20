@@ -3,13 +3,11 @@ const linkText = "WMBC"
 const aboutText = `Hello! My name Bao-Huan Tran. I am a Vietnamese American born and raised in Silver Spring, Maryland. I am majoring in Computer Science at the University of Maryland Baltimore County. I have a passion for programming and game development. Outside of academics I work at my schools radio station <a href='${wmbcURL}' target='_blank'>${linkText}</a> as the events manager. I enjoy playing video games, watching anime, listening to music, and going to concerts. I listen to a variety of music genres but some of my favorites are Shoegaze, Math Rock, Punk, Jazz and Jazz Fusion. I also enjoy going to the gym and playing and watching sports.`;
 document.getElementById("aboutText").innerHTML = aboutText;
 
-
+//lastfm: current listening image refresh 
 setInterval(() => {
   document.querySelector('.lastfm img').src = 
     'https://lastfm-recently-played.vercel.app/api?user=ba0o0o&count=1&width=500&height=1000' + Date.now();
 }, 10000); // updates every 30 seconds
-
-
 
 // Pokemon
 const pokemons = ['images/pokemon/infernape.gif', 'images/pokemon/turtwig.gif','images/pokemon/riolu.gif',
@@ -45,3 +43,26 @@ function nextPokemon() {
     document.getElementById('pokemon-header').style.fontSize ="larger";
   }
 }
+
+//Contact
+document.getElementById('contact-form').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  
+  const email = document.getElementById('email-input').value;
+
+  try{
+    const response = await fetch("http://localhost:8080/contact", {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body:  JSON.stringify({email})
+    });
+
+    const data = await response.json();
+    alert(data.message);
+
+  }catch(error){
+    console.error('Error:', error);
+    alert('Something went wrong. Please try again.');
+  }
+
+});

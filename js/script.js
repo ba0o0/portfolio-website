@@ -1,6 +1,6 @@
 const wmbcURL = "https://wmbc.umbc.edu/";
 const linkText = "WMBC"
-const aboutText = `Hello! My name Bao-Huan Tran. I am a Vietnamese American born and raised in Silver Spring Maryland. I am studying Computer Science at the University of Maryland Baltimore County. I have a passion for programming and game development. Outside of academics I work at my schools radio station <a href='${wmbcURL}' target='_blank'>${linkText}</a> as the events manager. I enjoy playing video games, watching anime, listening to music, and going to concerts. I listen to a variety of music genres but some of my favorites are Shoegaze, Math Rock, Punk, Jazz Fusion. I also enjoy going to the gym and playing and watching sports.`;
+const aboutText = `Hello! My name Bao-Huan Tran. I am a Vietnamese American born and raised in Silver Spring, Maryland. I am majoring in Computer Science at the University of Maryland Baltimore County. I have a passion for programming and game development. Outside of academics I work at my schools radio station <a href='${wmbcURL}' target='_blank'>${linkText}</a> as the events manager. I enjoy playing video games, watching anime, listening to music, and going to concerts. I listen to a variety of music genres but some of my favorites are Shoegaze, Math Rock, Punk, Jazz and Jazz Fusion. I also enjoy going to the gym and playing and watching sports.`;
 document.getElementById("aboutText").innerHTML = aboutText;
 
 

@@ -1,49 +1,34 @@
 const express = require('express');
 const cors = require('cors');
+const mongoose = require('mongoose');
+
+const contactRouter = require('./routes/contact');
+
 const app = express();
 const PORT =  8080;
+
+//MongoDB
+require('dotenv').config();
+console.log("Connect String: ",process.env.MONGODB_CONNECT_STRING)
+mongoose.connect(process.env.MONGODB_CONNECT_STRING)
+    .then(() => console.log("Sucessfully Connected to MongoDB"))
+    .catch(err => console.log("MongoDb connection error: " , err));
+
+
+//Middleware: Log Routes 
+app.use((req, res, next) =>{
+    console.log(req.method, req.path)
+    next();
+});
 
 app.use(express.json());
 app.use(cors());
 
-
-app.get('/', (req,res) => {
-    res.send("GET: Hello from Express");
-    
-});
-
-app.get('/about', (req, res) => {
-    res.send('This is the about page')
-});
-
-app.get('/products', (req, res) => {
-    res.json([
-        {id: 0, name: 'Chud', date:"09/10/2004 @ 7:38 pm"},
-        {id: 1, name: 'oba', date:"09/11/2004 @ 7 pm"}
-    ])
-});
-
-app.get('/products/:id', (req, res) => {
-    const id = Number (req.params.id);
-    const product = [
-        {id: 0, name: 'Chud', date:"09/10/2004 @ 7:38 pm"},
-        {id: 1, name: 'oba', date:"09/11/2004 @ 7 pm"}
-    ]   
-
-    const requestedProduct = product.find((product) => product.id === id);
-    res.json(requestedProduct);
-});
-
-
 // Middleware to parse form data
 app.use(express.urlencoded({ extended: true }));
 
-app.post('/contact', (req, res) => {
-    const email = req.body.email;
-    console.log('Email recieved:' , email);
-
-    res.json({message: 'Thanks for reaching out! I\'ll get back to you soon.'});
-});
+//Contact Route
+app.use('/contact', contactRouter);
 
 
 

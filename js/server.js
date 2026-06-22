@@ -7,9 +7,8 @@ const contactRouter = require('./routes/contact');
 const app = express();
 const PORT =  8080;
 
-//MongoDB
+//MongoDB Connection
 require('dotenv').config();
-console.log("Connect String: ",process.env.MONGODB_CONNECT_STRING)
 mongoose.connect(process.env.MONGODB_CONNECT_STRING)
     .then(() => console.log("Sucessfully Connected to MongoDB"))
     .catch(err => console.log("MongoDb connection error: " , err));

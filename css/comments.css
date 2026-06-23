@@ -23,8 +23,9 @@
 }
 #comments .btn{
     width: 200%;
-    margin-left: 260%;
-    margin-top: 50%;
+    margin-left: 280%;
+    padding-bottom: 0;
+    margin-top: 27%;
     background-color: rgb(59, 59, 85) !important;
     transition: .2s ease-in-out;
 }
@@ -35,15 +36,15 @@
 }
 #message-input{
     width: 200%;
-    height: 25%;
+    height: 35%;
     border-width: 110%;
     padding-left: 10px;
     border-radius: 3px;
-    margin-bottom: 60%;
+    margin-bottom: 30%;
 }
 #name-input{
     width: 90%;
-    height: 25%;
+    height: 35%;
     padding-left: 10px;
     border-radius: 3px;
 }

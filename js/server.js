@@ -3,6 +3,7 @@ const cors = require('cors');
 const mongoose = require('mongoose');
 
 const contactRouter = require('./routes/contact');
+const commentRouter = require('./routes/comment');
 
 const app = express();
 const PORT =  8080;
@@ -29,6 +30,8 @@ app.use(express.urlencoded({ extended: true }));
 //Contact Route
 app.use('/contact', contactRouter);
 
+//Comment Route
+app.use('/comment', commentRouter);
 
 
 app.listen(PORT, () => {    

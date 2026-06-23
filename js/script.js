@@ -1,3 +1,5 @@
+const { response } = require("express");
+
 const wmbcURL = "https://wmbc.umbc.edu/";
 const linkText = "WMBC"
 const aboutText = `Hello! My name Bao-Huan Tran. I am a Vietnamese American born and raised in Silver Spring, Maryland. I am majoring in Computer Science at the University of Maryland Baltimore County. I have a passion for programming and game development. Outside of academics I work at my schools radio station <a href='${wmbcURL}' target='_blank'>${linkText}</a> as the events manager. I enjoy playing video games, watching anime, listening to music, and going to concerts. I listen to a variety of music genres but some of my favorites are Shoegaze, Math Rock, Punk, Jazz and Jazz Fusion. I also enjoy going to the gym and playing and watching sports.`;
@@ -48,8 +50,8 @@ function nextPokemon() {
 document.getElementById('contact-form').addEventListener('submit', async (e) => {
   e.preventDefault();
   
-  const emailInput = document.getElementById('email-input').value;
-  const email = emailInput.value;
+  const email = document.getElementById('email-input').value;
+
   try{
     const response = await fetch("http://localhost:8080/contact", {
       method: 'POST',
@@ -66,5 +68,28 @@ document.getElementById('contact-form').addEventListener('submit', async (e) => 
     console.error('Error:', error);
     alert('Something went wrong. Please try again.');
   }
-
 });
+
+//Comment
+document.getElementById('comments-form').addEventListener('submit', async(e) => {
+  e.preventDefault();
+
+  const name = document.getElementById('name-input').value;
+
+  const message = document.getElementById('message-input').value;
+  try{
+    const response = await fetch("http://localhost:8080/comment", {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({name, message})
+    })
+
+    const data = await response.json();
+    alert(data.message);
+
+  }catch(error){
+    console.error('Error:', error);
+    alert('Something went wrong. Please try again.');
+  }
+
+})

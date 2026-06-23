@@ -48,8 +48,8 @@ function nextPokemon() {
 document.getElementById('contact-form').addEventListener('submit', async (e) => {
   e.preventDefault();
   
-  const email = document.getElementById('email-input').value;
-
+  const emailInput = document.getElementById('email-input').value;
+  const email = emailInput.value;
   try{
     const response = await fetch("http://localhost:8080/contact", {
       method: 'POST',
@@ -59,6 +59,8 @@ document.getElementById('contact-form').addEventListener('submit', async (e) => 
 
     const data = await response.json();
     alert(data.message);
+
+    emailInput.value = ''; //clears after submit
 
   }catch(error){
     console.error('Error:', error);

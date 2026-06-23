@@ -1,0 +1,49 @@
+#comments-input-box{
+    display: flex;
+    flex-direction: row;
+    margin-top: 35px;
+    padding-left: 25px;
+    padding-top: 20px;
+    padding-bottom: 0;
+    border-radius: 20px;
+    background-color: rgb(3, 3, 27);
+    width: 63%;
+}
+#comments ul {
+    display: flex;
+    flex-direction: row;
+    gap: 45px !important;
+}
+#comments li{
+    display: inline-block;
+}
+#comments h3{
+    margin-bottom: 5%;
+    padding: 0;
+}
+#comments .btn{
+    width: 200%;
+    margin-left: 260%;
+    margin-top: 50%;
+    background-color: rgb(59, 59, 85) !important;
+    transition: .2s ease-in-out;
+}
+#comments .btn:hover{
+    background-color: rgb(28, 28, 48) !important;
+    border-color: white;
+    transform: scale(1.1);
+}
+#message-input{
+    width: 200%;
+    height: 25%;
+    border-width: 110%;
+    padding-left: 10px;
+    border-radius: 3px;
+    margin-bottom: 60%;
+}
+#name-input{
+    width: 90%;
+    height: 25%;
+    padding-left: 10px;
+    border-radius: 3px;
+}

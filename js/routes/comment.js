@@ -4,16 +4,16 @@ const router = express.Router();
 const Comment = require('../models/Comment');
 
 router.post('/', async (req, res) => {
-    const nameInput = req.body.name;
-    const messageInput = req.body.message;
+    const name = req.body.name;
+    const message = req.body.message;
     
-    console.log ("Name: ", nameInput, ", Message:" ,messageInput);
+    console.log ("Name: ", name, ", Message:", message);
 
     try{
-        const newComment = new Comment({nameInput, messageInput});
+        const newComment = new Comment({name, message});
         await newComment.save();
 
-        res.json({message: 'Thank You for leaving a comment.'});
+        res.json({message: 'Thank You for leaving a comment!'});
 
     }catch(error){
         console.error(error);
@@ -21,5 +21,6 @@ router.post('/', async (req, res) => {
     }
 
 });
+
 
 module.exports = router;

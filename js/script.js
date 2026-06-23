@@ -1,4 +1,3 @@
-const { response } = require("express");
 
 const wmbcURL = "https://wmbc.umbc.edu/";
 const linkText = "WMBC"
@@ -61,9 +60,7 @@ document.getElementById('contact-form').addEventListener('submit', async (e) => 
 
     const data = await response.json();
     alert(data.message);
-
-    emailInput.value = ''; //clears after submit
-
+    document.getElementById('email-input').value = '';
   }catch(error){
     console.error('Error:', error);
     alert('Something went wrong. Please try again.');
@@ -75,7 +72,6 @@ document.getElementById('comments-form').addEventListener('submit', async(e) => 
   e.preventDefault();
 
   const name = document.getElementById('name-input').value;
-
   const message = document.getElementById('message-input').value;
   try{
     const response = await fetch("http://localhost:8080/comment", {
@@ -86,7 +82,8 @@ document.getElementById('comments-form').addEventListener('submit', async(e) => 
 
     const data = await response.json();
     alert(data.message);
-
+    document.getElementById('name-input').value = '';
+    document.getElementById('message-input').value = '';
   }catch(error){
     console.error('Error:', error);
     alert('Something went wrong. Please try again.');

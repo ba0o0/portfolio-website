@@ -62,6 +62,17 @@
     padding-left: 50px;
     padding-bottom: 10px;
 }
+.comment-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    width: 250%;
+}
+.comment-header p{
+    color: white;
+}
 .comment h4{
     color: rgb(167, 167, 167);
     margin-bottom: 15px;

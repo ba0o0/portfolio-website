@@ -1,7 +1,7 @@
 #comments-input-box{
     display: flex;
     flex-direction: row;
-    margin-top: 35px;
+    margin-top: 55px;
     padding-left: 25px;
     padding-top: 20px;
     padding-bottom: 0;
@@ -48,3 +48,27 @@
     padding-left: 10px;
     border-radius: 3px;
 }
+
+.comment-section{
+    margin-top: 5%;
+}
+.comment{
+    width: 400%;
+    height: 100%;
+    background-color: rgb(59, 59, 85) ;
+    border-radius: 15px;
+    border: 8px solid black;
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-bottom: 10px;
+}
+.comment h4{
+    color: rgb(167, 167, 167);
+    margin-bottom: 15px;
+    
+}
+.comment h2{
+    color: white;
+    margin-top: 10px;
+}
+

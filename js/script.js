@@ -45,6 +45,10 @@ function nextPokemon() {
   }
 }
 
+loadComments();
+
+// EVENT LISTENERS
+
 //Contact
 document.getElementById('contact-form').addEventListener('submit', async (e) => {
   e.preventDefault();
@@ -67,7 +71,7 @@ document.getElementById('contact-form').addEventListener('submit', async (e) => 
   }
 });
 
-//Comment
+//Comment POST 
 document.getElementById('comments-form').addEventListener('submit', async(e) => {
   e.preventDefault();
 
@@ -84,9 +88,53 @@ document.getElementById('comments-form').addEventListener('submit', async(e) => 
     alert(data.message);
     document.getElementById('name-input').value = '';
     document.getElementById('message-input').value = '';
+    loadComments();
   }catch(error){
     console.error('Error:', error);
     alert('Something went wrong. Please try again.');
   }
 
-})
+});
+
+//Comment GET
+let currentPage = 1;
+
+async function loadComments(){
+  try{
+    console.log('loading comments...');
+    const response = await fetch('http://localhost:8080/comment');
+    const data = await response.json();
+
+    console.log('Comments:', data)
+
+    const commentSection = document.querySelector('.comment-section ul');
+    commentSection.innerHTML = '';
+
+
+    data.comments.forEach(comment => {
+      const date = new Date(comment.timestamp).toLocaleString();
+      commentSection.innerHTML += 
+      `<li>
+          <div class="prose">
+            <div class="comment">
+              <div class="comment-header">
+                <h2>${comment.name}</h2>
+                <p>${date}</p>
+              </div>
+              <h4>${comment.message}</h4>
+            </div>
+          </div>
+        </li>`;
+      
+    });
+    // update pagination buttons
+    document.getElementById('page-info').textContent = `Page ${data.currentPage} of ${data.totalPages}`;
+    document.getElementById('prev-btn').disabled = page === 1;
+    document.getElementById('next-btn').disabled = page === data.totalPages;
+    currentPage = page;
+
+  } catch(error){
+    console.error('Error loading comments:', error);
+  }
+
+}

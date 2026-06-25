@@ -472,6 +472,7 @@
             <div class="prose">
                 <h1>Leave a Comment !</h1>
             </div>
+
             <form id="comments-form" action="http://localhost:8080/comment" method="post">
                 <div id="comments-input-box">
                     <ul>
@@ -489,19 +490,16 @@
                     </ul>
                 </div>
             </form>
+
+            <div class="pagination">
+                <button id="prev-btn" class="btn">Previous</button>
+                <span id="page-info"></span>
+                <button id="next-btn" class="btn">Next</button>
+            </div>
+            
             <div class="comment-section">
                 <ul>
-                    <li>
-                        <div class="comment">
-                            <div class="prose">
-                                <div class="comment-header">
-                                    <h2>Ichiko Aoba</h3>
-                                    <p>3/2/2004 @5:30pm</p>
-                                </div>
-                                <h4>Test: message I like chicken and dean sucks </h4>
-                            </div>
-                        </div>
-                    </li>
+                    <!--Comments will by Dynamically Populated -->
                 </ul>
             </div>
         </section>

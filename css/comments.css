@@ -1,7 +1,8 @@
+/*Comment Input*/
 #comments-input-box{
     display: flex;
     flex-direction: row;
-    margin-top: 55px;
+    margin-top: 30px;
     padding-left: 25px;
     padding-top: 20px;
     padding-bottom: 0;
@@ -9,9 +10,10 @@
     background-color: rgb(3, 3, 27);
     width: 63%;
 }
-#comments ul {
+.comment-form ul {
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
     gap: 45px !important;
 }
 #comments li{
@@ -21,11 +23,14 @@
     margin-bottom: 5%;
     padding: 0;
 }
+#comments li:last-child {
+    position: relative;
+    top: -12.5%; /* adjust value */
+}
 #comments .btn{
     width: 200%;
-    margin-left: 280%;
-    padding-bottom: 0;
-    margin-top: 27%;
+    margin-left: 350%;
+    align-self: flex-start;
     background-color: rgb(59, 59, 85) !important;
     transition: .2s ease-in-out;
 }
@@ -36,31 +41,48 @@
 }
 #message-input{
     width: 200%;
-    height: 35%;
+    height: 40px;
     border-width: 110%;
     padding-left: 10px;
     border-radius: 3px;
-    margin-bottom: 30%;
+    margin-bottom: 20%;
 }
 #name-input{
     width: 90%;
-    height: 35%;
+    height: 40px;
     padding-left: 10px;
     border-radius: 3px;
 }
 
+/*Prev and Next button*/
+.pagination {
+    display: flex;
+    width: 55px;
+    margin-left: 57%;
+}
+.pagination .btn {
+   background-color: blue !important;
+}
+
+/*Comment Section*/
 .comment-section{
-    margin-top: 5%;
+    margin-top: 20px;
+}
+.comment-section ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
 }
 .comment{
-    width: 400%;
-    height: 100%;
+    width: 270%;
+    height: auto;
     background-color: rgb(59, 59, 85) ;
     border-radius: 15px;
     border: 8px solid black;
-    padding-top: 10px;
     padding-left: 50px;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
+    padding-right: 15px;
 }
 .comment-header {
     display: flex;
@@ -68,15 +90,13 @@
     align-items: center;
     justify-content: space-between;
     gap: 15px;
-    width: 250%;
 }
 .comment-header p{
     color: white;
 }
 .comment h4{
     color: rgb(167, 167, 167);
-    margin-bottom: 15px;
-    
+    margin-top: 0;
 }
 .comment h2{
     color: white;

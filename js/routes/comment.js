@@ -1,7 +1,13 @@
+const {checkProfanity, Filter} = require('glin-profanity');
 const express = require('express');
 const router = express.Router();
 
-const Comment = require('../models/Comment');
+const Comment = require('../models/Comment');   // schema
+
+const commentFilter = new Filter({
+            detectLeetspeak: true,
+            languages: ['english']
+});
 
 router.post('/', async (req, res) => {
     const name = req.body.name;
@@ -11,6 +17,14 @@ router.post('/', async (req, res) => {
 
     try{
         const newComment = new Comment({name, message});
+
+        //checkProfanity
+        const profanStatus = checkProfanity(`${name} ${message}`, commentFilter);
+        if(profanStatus.containsProfanity){
+            res.json({message:"SHAME ON YOU: Your message was detect as inappropriate!"});
+            return;
+        }
+
         await newComment.save();
 
         res.json({message: 'Thank You for leaving a comment!'});

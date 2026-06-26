@@ -25,13 +25,13 @@ router.post('/', async (req, res) => {
 router.get('/', async (req, res) => {
     try{
         const page = parseInt (req.query.page) || 1;
-        const limit = 4;
+        const limit = 5;
         const skip = (page - 1) * limit;
         
         const comments = await Comment.find()
-        .sort({timestamp: -1})
-        .skip(skip)
-        .limit(limit);
+            .sort({timestamp: -1})
+            .skip(skip)
+            .limit(limit);
 
         const total = await Comment.countDocuments();
         const totalPages = Math.ceil(total/limit);

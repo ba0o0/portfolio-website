@@ -1,4 +1,6 @@
 
+
+// MAIN 
 const wmbcURL = "https://wmbc.umbc.edu/";
 const linkText = "WMBC"
 const aboutText = `Hello! My name Bao-Huan Tran. I am a Vietnamese American born and raised in Silver Spring, Maryland. I am majoring in Computer Science at the University of Maryland Baltimore County. I have a passion for programming and game development. Outside of academics I work at my schools radio station <a href='${wmbcURL}' target='_blank'>${linkText}</a> as the events manager. I enjoy playing video games, watching anime, listening to music, and going to concerts. I listen to a variety of music genres but some of my favorites are Shoegaze, Math Rock, Punk, Jazz and Jazz Fusion. I also enjoy going to the gym and playing and watching sports.`;
@@ -46,6 +48,7 @@ function nextPokemon() {
 }
 
 loadComments();
+
 
 // EVENT LISTENERS
 
@@ -99,10 +102,11 @@ document.getElementById('comments-form').addEventListener('submit', async(e) => 
 //Comment GET
 let currentPage = 1;
 
-async function loadComments(){
+async function loadComments(page = 1){
   try{
     console.log('loading comments...');
-    const response = await fetch('http://localhost:8080/comment');
+    const response = await fetch(`http://localhost:8080/comment?page=${page}`);
+    
     const data = await response.json();
 
     console.log('Comments:', data)
@@ -136,5 +140,8 @@ async function loadComments(){
   } catch(error){
     console.error('Error loading comments:', error);
   }
-
 }
+document.getElementById('prev-btn').addEventListener('click', () => loadComments(currentPage - 1));
+document.getElementById('next-btn').addEventListener('click', () => loadComments(currentPage + 1));
+
+loadComments();

@@ -21,7 +21,7 @@ router.post('/', async (req, res) => {
         //checkProfanity
         const profanStatus = checkProfanity(`${name} ${message}`, commentFilter);
         if(profanStatus.containsProfanity){
-            res.json({message:"SHAME ON YOU: Your message was detect as inappropriate!"});
+            res.json({message:"WHAT DID I SAY, SHAME ON YOU: Your message was detect as inappropriate!"});
             return;
         }
 

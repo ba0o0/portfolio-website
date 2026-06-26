@@ -74,6 +74,8 @@ document.getElementById('contact-form').addEventListener('submit', async (e) => 
   }
 });
 
+//COMMENT
+
 //Comment POST 
 document.getElementById('comments-form').addEventListener('submit', async(e) => {
   e.preventDefault();

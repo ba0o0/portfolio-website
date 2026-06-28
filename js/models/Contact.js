@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const contactSchema = new mongoose.Schema({
-    email: String,
+    email: {type: String, unique: true},
     timestamp: {type: Date, default: Date.now}
 });
 

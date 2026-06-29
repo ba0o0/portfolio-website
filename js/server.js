@@ -6,7 +6,11 @@ const contactRouter = require('./routes/contact');
 const commentRouter = require('./routes/comment');
 
 const app = express();
-const PORT =  8080;
+const PORT = process.env.PORT || 8080;
+
+app.use(cors({
+  origin: ['https://baohuantran.dev', 'https://www.baohuantran.dev']
+}));
 
 //MongoDB Connection
 require('dotenv').config();

@@ -1,4 +1,4 @@
-
+const API_URL = 'https://api-baohuantran.onrender.com';
 
 // MAIN 
 const wmbcURL = "https://wmbc.umbc.edu/";
@@ -59,7 +59,7 @@ document.getElementById('contact-form').addEventListener('submit', async (e) => 
   const email = document.getElementById('email-input').value;
 
   try{
-    const response = await fetch("http://localhost:8080/contact", {
+    const response = await fetch(`${API_URL}contact`, {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
       body:  JSON.stringify({email})
@@ -83,7 +83,7 @@ document.getElementById('comments-form').addEventListener('submit', async(e) => 
   const name = document.getElementById('name-input').value;
   const message = document.getElementById('message-input').value;
   try{
-    const response = await fetch("http://localhost:8080/comment", {
+    const response = await fetch(`${API_URL}/comment`, {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({name, message})
@@ -107,7 +107,7 @@ let currentPage = 1;
 async function loadComments(page = 1){
   try{
     console.log('loading comments...');
-    const response = await fetch(`http://localhost:8080/comment?page=${page}`);
+    const response = await fetch(`${API_URL}/comment?page=${page}`);
     
     const data = await response.json();
 

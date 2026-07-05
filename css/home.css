@@ -9,6 +9,7 @@
 .home .home-container{ 
    display: flex;
    justify-content: center;
+   width: 100%;
    gap: 10rem;
 }
 .bao-img{
@@ -30,9 +31,10 @@
 /*HOME: Social Links */
 .socials{
     display: flex;
+    position: relative;
+    top: 20px;
     align-items: center;
     gap: 5px;
-    margin-top: 20px;
     padding-bottom: 0;
 }
 .socials img{
@@ -52,11 +54,13 @@
 }
 
 .lastfm{
-    margin-top: 30px;
+    position: relative;
+    top: 30px;
 }
 .lastfm img {
-  width: 1000px !important;
-  max-width: 600px !important;
-  height: auto !important;
-  margin-top: 20px;
+    position: relative;
+    top: 20px;
+    width: 100rem ;
+    max-width: 600px;
+    height: auto ;
 }

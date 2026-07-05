@@ -1,4 +1,19 @@
 @media(max-width: 1280px){
+    .home .home-container{
+        flex-wrap: wrap;      /* let items drop to a new line instead of overflowing */
+        gap: 7rem;
+        width: 100%;
+    }
+    .bao-img{
+        width: 30vw;
+        object-fit: cover;
+    }
+    .lastfm img{
+        width: 35vw !important;
+    }
+    .info-box{
+        max-width: 100%;
+    }
 
 }
 

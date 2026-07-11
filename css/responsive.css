@@ -1,6 +1,7 @@
 @media(max-width: 1280px){
+    /*HOME*/
     .home .home-container{
-        flex-wrap: wrap;      /* let items drop to a new line instead of overflowing */
+        flex-wrap: wrap;      
         gap: 7rem;
         width: 100%;
     }
@@ -13,6 +14,20 @@
     }
     .info-box{
         max-width: 100%;
+    }
+
+    /*ABOUT*/
+    .about-imgs img{
+        height: 5rem;
+        width: 5rem;
+    }
+    .about-imgs ul{
+        grid-template-columns: repeat(3, max-content);
+        padding: 0;
+        gap: 1rem 0;
+    }
+    .about-imgs a{
+        padding: 1rem;
     }
 
 }

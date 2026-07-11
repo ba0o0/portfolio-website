@@ -123,7 +123,17 @@ summary{
 .menu li > *:hover {
     background-color: rgb(1, 1, 15);
 }
-
+.menu :where(li) {
+    width: 100%;   /* or flex: 1, or similar */
+}
+:where(.menu li) {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: stretch;   /* <-- this is the actual cause */
+}
+.prose {
+    max-width: 65ch;
+}
 /*Sections*/
 section{
     min-height: 100vh;

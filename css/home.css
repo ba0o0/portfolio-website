@@ -51,6 +51,9 @@
 
 .gmail-icon img{
     background-color: white;
+    padding: 1px;
+    padding-left: 2px;
+    padding-right: 2px;
 }
 
 .lastfm{

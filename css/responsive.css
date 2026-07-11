@@ -17,14 +17,32 @@
     }
 
     /*ABOUT*/
+    .about-info{
+        width: 40rem;
+        top: 1rem;
+    }
+    .about-top-row{
+        left: 2rem;
+    }
+    .about-socials img{
+        width: 10rem;
+    }
+    .about-imgs li{
+        width: 11rem !important;   /* shrink the container itself */
+    }
     .about-imgs img{
-        height: 5rem;
-        width: 5rem;
+        width: 100%;    /* image always fills its container, no separate math needed */
+        height: 100%;
+    }
+    .about-imgs li a.tooltip{
+        display: block;
+        width: 100%;
     }
     .about-imgs ul{
-        grid-template-columns: repeat(3, max-content);
-        padding: 0;
-        gap: 1rem 0;
+        gap: 1rem 1rem;
+    }
+    .about-imgs .pokemon-carousel {
+        width: 5%;
     }
     .about-imgs a{
         padding: 1rem;

@@ -21,10 +21,13 @@
 .info-box{
     display: flex;
     flex-direction: column;
+    position: relative;
+    top: 2rem;
 }
 
 .info-box .btn-group{
-    margin-top: 15px;
+    position: relative;
+    top: 15px;
 }
 
 
@@ -38,7 +41,7 @@
     padding-bottom: 0;
 }
 .socials img{
-    width: 50px;
+    width: 3rem;
     border-radius: 8px;
 }
 .socials a{
@@ -62,8 +65,8 @@
 }
 .lastfm img {
     position: relative;
-    top: 20px;
-    width: 100rem ;
-    max-width: 600px;
+    top: 1rem;
+    width: 100%;
+    max-width: 100rem;
     height: auto ;
 }

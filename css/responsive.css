@@ -85,7 +85,6 @@
     }
     .info-box{
         bottom: 5rem;
-            
     }
 
     /*ABOUT*/
@@ -97,16 +96,10 @@
     }
     .about-info{
         width: 30rem;
-        top: 1rem;
+        top: 2rem;
     }
     .about-socials img{
         width: 6rem;
-    }
-
-    .about-top-row{
-        position: relative;
-        top: 5%;
-        right: 50%;
     }
     .about-imgs img{
         width: 9rem;
@@ -128,7 +121,68 @@
 
 /*600px*/
 @media(max-width: 600px){
+    /*HOME*/
+    .home .home-container{
+        gap: 0;
+    }
+    .bao-img{
+        position: relative;
+        top: 2rem;
+    }
+    .info-box{
+        align-items: center;
+    }
+    .lastfm img{
+        position: relative;
+        left: .5rem;
+        width: 40rem;
+    }
+    .lastfm h3{
+        position: relative;
+        left: 4rem !important;
+    }
+
+    /*ABOUT*/
+    .about{
+        padding-top: 3rem;
+    }
     .about .about-container{
+        display: flex;
+        flex-direction: column;
         flex-wrap: wrap;  
+        gap: 1rem;
+        align-items: flex-start !important;
+    }
+    .about-info{
+        position: relative;
+        width: 20rem;
+    }
+    .about-socials{
+        position: relative;
+    }
+    .about-socials img{
+        position: relative;
+        bottom: 1rem;
+        margin-top: 0;
+        width: 2.5rem;
+    }
+    .about-imgs{
+        align-self: flex-start !;
+    }
+    .about-imgs img{
+        width: 9rem;
+    }
+    .about-imgs li{
+        width: 8rem !important;   /* shrink the container itself */
+    }
+    .about-imgs li a.tooltip{
+        display: block;
+        width: 100%;
+    }
+    .about-imgs ul{
+        position: relative;
+        left: -5rem;
+        top: 3rem;
+        gap: .5rem .5rem;
     }
 }

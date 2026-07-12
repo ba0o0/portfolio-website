@@ -24,12 +24,13 @@
     position: relative;
     top: 2rem;
 }
-
 .info-box .btn-group{
     position: relative;
     top: 15px;
 }
-
+.info-box .text h2{
+    margin-top: .5rem !important;
+}
 
 /*HOME: Social Links */
 .socials{

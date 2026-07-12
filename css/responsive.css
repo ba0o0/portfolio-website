@@ -1,5 +1,17 @@
 /*1280px*/
 @media(max-width: 1280px){
+    header{
+        padding: 1rem 2rem;
+        gap: 2rem;
+    }
+    footer{
+        padding-right: 10%;
+        gap: 40rem;
+    }
+    footer .copyright {
+        width: 20rem;
+    }
+
     /*HOME*/
     .home .home-container{
         flex-wrap: wrap;      
@@ -18,6 +30,9 @@
     }
 
     /*ABOUT*/
+    .about .about-container{
+        gap: 3rem;
+    }
     .about-info{
         width: 40rem;
         top: 1rem;
@@ -51,8 +66,43 @@
 
 }
 
-/*768px*/
-@media(max-width: 768px){
+/*1017px only for HOME*/
+@media(max-width: 1017px){
+    .home .home-container{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        bottom: 5rem;
+        flex-wrap: wrap;      
+        gap: 1rem;
+        width: 100%;
+    }
+    .bao-img{
+        position: relative;
+        width: 15rem;
+        object-fit: cover;
+        border-radius: 15%;
+        top: 5rem;
+    }
+    .lastfm img{
+        width: 20rem !important;
+    }
+    .info-box{
+        top: 4rem;
+    }
+}
+
+
+/*840px*/
+@media(max-width: 840px){
+    header{
+        padding: 1rem 1rem;
+        gap: 1rem;
+        font-size: 0.8rem !important;
+    }
+    .header .logo{
+        font-size: 1rem;
+    }
     .btn{
         width: 8rem;
     }
@@ -64,6 +114,31 @@
     }
     .prose{
         font-size: 0.8rem !important;
+    }
+    .grid{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .project-grid{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .input-box input{
+        padding: 1rem 2rem;
+    }
+    .input-box .input-box::placeholder{
+        font-size: 1.5rem;
+    }
+    .input-box i {
+        display: none;
+    }
+    footer{
+        padding-right: 10%;
+        gap: 15rem;
+    }
+    footer .copyright {
+        width: 20rem;
+    }
+    footer ul{
+        gap: 7px;
     }
     /*HOME*/
     .home .home-container{
@@ -84,7 +159,7 @@
         width: 20rem !important;
     }
     .info-box{
-        bottom: 5rem;
+        top: 4rem;
     }
 
     /*ABOUT*/
@@ -121,6 +196,61 @@
 
 /*600px*/
 @media(max-width: 600px){
+    header #menu-icon{
+        display: block;
+        position: relative;
+        left: 10rem;
+    }
+    .vist-btn{
+        display: none;
+    }
+    .nav-links{
+        position: absolute;
+        top: 100%;
+        margin-top: 1rem;
+        width: 100%;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-color: rgba(0, 0, 0, .9);
+        border-radius: 3rem;
+        display: none;
+    }
+    .nav-links li{
+        margin-top: 1.5rem;
+        padding: 1rem;
+    }
+    .nav-links.active{
+        display: block;
+    }
+    header{
+        margin-right: 0;
+        padding: 1rem 5rem;
+        gap: 7rem;
+    }
+    header .logo {
+        font-size: 1.5rem;
+    }
+    .input-box input{
+        padding: 0.5rem 3rem;
+        width: 80%;
+        font-size: 1.5rem;
+    }
+    .input-box input::placeholder{
+        font-size: 1rem;
+    }
+    #contact .btn{
+        position: relative;
+        top: 2%;
+        width: 100%;
+    }
+    footer{
+        gap: 6rem;
+    }
+    footer ul{
+        gap: 5px;
+    }
     /*HOME*/
     .home .home-container{
         gap: 0;
@@ -130,6 +260,16 @@
         top: 2rem;
     }
     .info-box{
+        position: relative;
+        align-items: center;
+    }
+    .info-box .text{
+        text-align: center;
+    }
+    .info-box .text h2{
+        margin-top: 0;
+    }
+    .home-container .info-box .text{
         align-items: center;
     }
     .lastfm img{

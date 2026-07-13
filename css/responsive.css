@@ -63,7 +63,15 @@
     .about-imgs a{
         padding: 1rem;
     }
-
+    .programming-langs ul{
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        list-style: none;
+        gap: .8rem;  
+    }
+    .programming-langs li a.tooltip{
+        padding: .5rem;
+    }
 }
 
 /*1017px only for HOME*/
@@ -90,6 +98,7 @@
     .info-box{
         top: 4rem;
     }
+    
 }
 
 
@@ -191,7 +200,26 @@
         padding: 0rem;
         gap: .5rem .5rem;
     }
-
+    
+    /*EXPERIENCE*/
+   .programming-langs ul{
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        list-style: none;
+        gap: .7rem;  
+    }
+    .programming-langs li a.tooltip{
+        padding: .1rem;
+    }
+    .programming-langs img{
+        width: 10rem;
+    }
+    .programming-langs .tooltip:before {
+        font-size: 0.5rem;
+    }
+    .programming-langs h2{
+        margin-bottom: 1rem;
+    }
 }
 
 /*600px*/
@@ -199,7 +227,7 @@
     header #menu-icon{
         display: block;
         position: relative;
-        left: 10rem;
+        left: 5rem;
     }
     .vist-btn{
         display: none;
@@ -333,5 +361,30 @@
         left: -5rem;
         top: 3rem;
         gap: .5rem .5rem;
+    }
+
+    /*EXPERIENCE*/
+    .programming-langs ul{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        list-style: none;
+        gap: .7rem;  
+    }
+    .programming-langs li a.tooltip{
+        padding: .3rem;
+    }
+    .programming-langs img{
+        width: 10rem;
+    }
+    .programming-langs .tooltip:before {
+        font-size: 0.5rem;
+    }
+
+    /*CONTACT*/
+    .input-box .btn{
+        position: relative;
+        bottom: 1rem !important;
+        width: 4rem !important;
+        font-size: .7rem;
     }
 }

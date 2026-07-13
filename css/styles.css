@@ -142,4 +142,7 @@ section{
     position: relative;
 }
 
-/*Responsive*/
+/*tooltip*/
+.tooltip:before {
+  content: attr(data-tip);
+}

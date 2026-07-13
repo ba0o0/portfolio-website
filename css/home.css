@@ -35,8 +35,7 @@
 /*HOME: Social Links */
 .socials{
     display: flex;
-    position: relative;
-    top: 20px;
+    margin-top: 1.5rem;
     align-items: center;
     gap: 5px;
     padding-bottom: 0;
@@ -61,13 +60,11 @@
 }
 
 .lastfm{
-    position: relative;
-    top: 30px;
+    margin-top: 1rem;
 }
 .lastfm img {
-    position: relative;
-    top: 1rem;
-    width: 100%;
-    max-width: 100rem;
-    height: auto ;
+  width: 62.5rem !important;
+  max-width: 37.5rem !important;
+  height: auto !important;
+  margin-top: 1.5rem;
 }

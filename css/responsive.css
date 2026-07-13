@@ -72,6 +72,7 @@
     .programming-langs li a.tooltip{
         padding: .5rem;
     }
+    
 }
 
 /*1017px only for HOME*/
@@ -220,6 +221,23 @@
     .programming-langs h2{
         margin-bottom: 1rem;
     }
+
+    /*COMMENT*/
+    #comments-input-box{
+        display: flex;
+        flex-direction: column;
+    }
+    #comments-input-box ul {
+        flex-direction: column !important;
+        align-items: stretch;   /* optional: makes inputs/button full-width of the box */
+        gap: 1rem;              /* adjust spacing for stacked layout */
+    }
+    #comments li:last-child {
+        margin-left: 0;         /* undo the auto right-push, not needed when stacked */
+        margin-right: 0;
+        align-self: flex-end;   /* or flex-start/center, wherever you want the button to sit */
+    }
+
 }
 
 /*600px*/

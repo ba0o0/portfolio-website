@@ -208,14 +208,17 @@
         position: absolute;
         top: 100%;
         margin-top: 1rem;
-        width: 100%;
+        width: 90%;
         color: white;
         display: flex;
         flex-direction: column;
         text-align: center;
         background-color: rgba(0, 0, 0, .9);
         border-radius: 3rem;
-        display: none;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-10px) scale(0.95);
+        transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     }
     .nav-links li{
         margin-top: 1.5rem;
@@ -223,6 +226,9 @@
     }
     .nav-links.active{
         display: block;
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0) scale(1);
     }
     header{
         margin-right: 0;
@@ -235,10 +241,13 @@
     .input-box input{
         padding: 0.5rem 3rem;
         width: 80%;
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
     .input-box input::placeholder{
         font-size: 1rem;
+        width: 10rem;
+        position: relative;
+        right: 1.5rem;
     }
     #contact .btn{
         position: relative;
@@ -246,7 +255,7 @@
         width: 100%;
     }
     footer{
-        gap: 6rem;
+        gap: 5em;
     }
     footer ul{
         gap: 5px;

@@ -9,6 +9,7 @@
 .home .home-container{ 
    display: flex;
    justify-content: center;
+   width: 100%;
    gap: 10rem;
 }
 .bao-img{
@@ -20,23 +21,27 @@
 .info-box{
     display: flex;
     flex-direction: column;
+    position: relative;
+    top: 2rem;
 }
-
 .info-box .btn-group{
-    margin-top: 15px;
+    position: relative;
+    top: 15px;
 }
-
+.info-box .text h2{
+    margin-top: .5rem !important;
+}
 
 /*HOME: Social Links */
 .socials{
     display: flex;
+    margin-top: 1.5rem;
     align-items: center;
     gap: 5px;
-    margin-top: 20px;
     padding-bottom: 0;
 }
 .socials img{
-    width: 50px;
+    width: 3rem;
     border-radius: 8px;
 }
 .socials a{
@@ -49,14 +54,17 @@
 
 .gmail-icon img{
     background-color: white;
+    padding: 1px;
+    padding-left: 2px;
+    padding-right: 2px;
 }
 
 .lastfm{
-    margin-top: 30px;
+    margin-top: 1rem;
 }
 .lastfm img {
-  width: 1000px !important;
-  max-width: 600px !important;
+  width: 62.5rem !important;
+  max-width: 37.5rem !important;
   height: auto !important;
-  margin-top: 20px;
+  margin-top: 1.5rem;
 }

@@ -1,0 +1,438 @@
+/*1280px*/
+@media(max-width: 1280px){
+    header{
+        padding: 1rem 2rem;
+        gap: 2rem;
+    }
+    footer{
+        padding-right: 10%;
+        gap: 40rem;
+    }
+    footer .copyright {
+        width: 20rem;
+    }
+
+    /*HOME*/
+    .home .home-container{
+        flex-wrap: wrap;      
+        gap: 7rem;
+        width: 100%;
+    }
+    .bao-img{
+        width: 30vw;
+        object-fit: cover;
+    }
+    .lastfm img{
+        width: 35vw !important;
+    }
+    .info-box{
+        max-width: 100%;
+    }
+
+    /*ABOUT*/
+    .about .about-container{
+        gap: 3rem;
+    }
+    .about-info{
+        width: 40rem;
+        top: 1rem;
+    }
+    .about-top-row{
+        left: 2rem;
+    }
+    .about-socials img{
+        width: 10rem;
+    }
+    .about-imgs li{
+        width: 11rem !important;   /* shrink the container itself */
+    }
+    .about-imgs img{
+        width: 100%;    /* image always fills its container, no separate math needed */
+        height: 100%;
+    }
+    .about-imgs li a.tooltip{
+        display: block;
+        width: 100%;
+    }
+    .about-imgs ul{
+        gap: 1rem 1rem;
+    }
+    .about-imgs .pokemon-carousel {
+        width: 5%;
+    }
+    .about-imgs a{
+        padding: 1rem;
+    }
+    .programming-langs ul{
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        list-style: none;
+        gap: .8rem;  
+    }
+    .programming-langs li a.tooltip{
+        padding: .5rem;
+    }
+    
+}
+
+/*1017px only for HOME*/
+@media(max-width: 1017px){
+    .home .home-container{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        bottom: 5rem;
+        flex-wrap: wrap;      
+        gap: 1rem;
+        width: 100%;
+    }
+    .bao-img{
+        position: relative;
+        width: 15rem;
+        object-fit: cover;
+        border-radius: 15%;
+        top: 5rem;
+    }
+    .lastfm img{
+        width: 20rem !important;
+    }
+    .info-box{
+        top: 4rem;
+    }
+    
+}
+
+
+/*840px*/
+@media(max-width: 840px){
+    header{
+        padding: 1rem 1rem;
+        gap: 1rem;
+        font-size: 0.8rem !important;
+    }
+    .header .logo{
+        font-size: 1rem;
+    }
+    .btn{
+        width: 8rem;
+    }
+    .btn-group{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+    .prose{
+        font-size: 0.8rem !important;
+    }
+    .grid{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .project-grid{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .input-box input{
+        padding: 1rem 2rem;
+    }
+    .input-box .input-box::placeholder{
+        font-size: 1.5rem;
+    }
+    .input-box i {
+        display: none;
+    }
+    footer{
+        padding-right: 10%;
+        gap: 15rem;
+    }
+    footer .copyright {
+        width: 20rem;
+    }
+    footer ul{
+        gap: 7px;
+    }
+    /*HOME*/
+    .home .home-container{
+        position: relative;
+        bottom: 5rem;
+        flex-wrap: wrap;      
+        gap: 1rem;
+        width: 100%;
+    }
+    .bao-img{
+        position: relative;
+        width: 15rem;
+        object-fit: cover;
+        border-radius: 15%;
+        top: 5rem;
+    }
+    .lastfm img{
+        width: 20rem !important;
+    }
+    .info-box{
+        top: 4rem;
+    }
+
+    /*ABOUT*/
+    .about{
+        padding-top: 6.5rem;
+    }
+    .about .about-container{
+        gap: 0;
+    }
+    .about-info{
+        width: 30rem;
+        top: 2rem;
+    }
+    .about-socials img{
+        width: 6rem;
+    }
+    .about-imgs img{
+        width: 9rem;
+    }
+    .about-imgs li{
+        width: 11rem !important;   /* shrink the container itself */
+    }
+    .about-imgs li a.tooltip{
+        display: block;
+        width: 100%;
+    }
+    .about-imgs ul{
+        right: 1rem !important;
+        padding: 0rem;
+        gap: .5rem .5rem;
+    }
+    
+    /*EXPERIENCE*/
+   .programming-langs ul{
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        list-style: none;
+        gap: .7rem;  
+    }
+    .programming-langs li a.tooltip{
+        padding: .1rem;
+    }
+    .programming-langs img{
+        width: 10rem;
+    }
+    .programming-langs .tooltip:before {
+        font-size: 0.5rem;
+    }
+    .programming-langs h2{
+        margin-bottom: 1rem;
+    }
+
+    /*COMMENT*/
+    #comments-input-box{
+        display: flex;
+        flex-direction: column;
+        padding-top: 1rem;
+        height: 31vh;
+        gap: .5rem;
+    }
+    #name-input{
+        width: 15vw;
+    }
+    #message-input::placeholder, #name-input::placeholder{
+        font-size: .8rem;
+    }
+    #comments-input-box .submit-container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    #comments-input-box #submit-btn {
+        top: 0;
+        width: 30vw;
+        margin-top: 1rem;
+        margin-left: 0;         
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+    .pagination{
+        gap: .5rem;
+    }
+    .pagination-container{
+        padding-right: 9.5rem;
+    }
+    .pagination .btn {
+        width: 5rem;
+    }
+    
+
+}
+
+/*600px*/
+@media(max-width: 600px){
+    header #menu-icon{
+        display: block;
+        position: relative;
+        left: 5rem;
+    }
+    .vist-btn{
+        display: none;
+    }
+    .nav-links{
+        position: absolute;
+        top: 100%;
+        margin-top: 1rem;
+        width: 90%;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-color: rgba(0, 0, 0, .9);
+        border-radius: 3rem;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-10px) scale(0.95);
+        transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    .nav-links li{
+        margin-top: 1.5rem;
+        padding: 1rem;
+    }
+    .nav-links.active{
+        display: block;
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0) scale(1);
+    }
+    header{
+        margin-right: 0;
+        padding: 1rem 5rem;
+        gap: 7rem;
+    }
+    header .logo {
+        font-size: 1.5rem;
+    }
+    .input-box input{
+        padding: 0.5rem 3rem;
+        width: 80%;
+        font-size: 1rem;
+    }
+    .input-box input::placeholder{
+        font-size: 1rem;
+        width: 10rem;
+        position: relative;
+        right: 1.5rem;
+    }
+    #contact .btn{
+        position: relative;
+        top: 2%;
+        width: 100%;
+    }
+    footer{
+        gap: 5em;
+    }
+    footer ul{
+        gap: 5px;
+    }
+    /*HOME*/
+    .home .home-container{
+        gap: 0;
+    }
+    .bao-img{
+        position: relative;
+        top: 2rem;
+    }
+    .info-box{
+        position: relative;
+        align-items: center;
+    }
+    .info-box .text{
+        text-align: center;
+    }
+    .info-box .text h2{
+        margin-top: 0;
+    }
+    .home-container .info-box .text{
+        align-items: center;
+    }
+    .lastfm img{
+        position: relative;
+        left: .5rem;
+        width: 40rem;
+    }
+    .lastfm h3{
+        position: relative;
+        left: 4rem !important;
+    }
+
+    /*ABOUT*/
+    .about{
+        padding-top: 3rem;
+    }
+    .about .about-container{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;  
+        gap: 1rem;
+        align-items: flex-start !important;
+    }
+    .about-info{
+        position: relative;
+        width: 20rem;
+    }
+    .about-socials{
+        position: relative;
+    }
+    .about-socials img{
+        position: relative;
+        bottom: 1rem;
+        margin-top: 0;
+        width: 2.5rem;
+    }
+    .about-imgs{
+        align-self: flex-start !;
+    }
+    .about-imgs img{
+        width: 9rem;
+    }
+    .about-imgs li{
+        width: 8rem !important;   /* shrink the container itself */
+    }
+    .about-imgs li a.tooltip{
+        display: block;
+        width: 100%;
+    }
+    .about-imgs ul{
+        position: relative;
+        left: -5rem;
+        top: 3rem;
+        gap: .5rem .5rem;
+    }
+
+    /*EXPERIENCE*/
+    .programming-langs ul{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        list-style: none;
+        gap: .7rem;  
+    }
+    .programming-langs li a.tooltip{
+        padding: .3rem;
+    }
+    .programming-langs img{
+        width: 10rem;
+    }
+    .programming-langs .tooltip:before {
+        font-size: 0.5rem;
+    }
+
+    /*COMMENT*/
+    #name-input{
+        width: 20vw;
+    }
+    #message-input{
+        width: 30vw;
+    }
+
+    /*CONTACT*/
+    .input-box .btn{
+        position: relative;
+        bottom: 1rem !important;
+        width: 4rem !important;
+        font-size: .7rem;
+    }
+}

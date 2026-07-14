@@ -8,7 +8,8 @@ footer{
     align-items: center;
     justify-content: left;
     padding-left: 5%;
-    gap: 70%;
+    padding-right: 2%;
+    gap: 80rem;
     background-color:   rgb(3, 3, 27);
 }
 .copyright{

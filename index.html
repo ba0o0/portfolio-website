@@ -2,7 +2,7 @@
 <html lang="en-US" data-theme="night">
     <head>
         <meta charset="UTF-8">
-        <meta name="Bao-Huan's Portfolio" content="This is the HTML for Bao-Huan's Portfolio">
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
         <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="css/home.css">
         <link rel="stylesheet" href="css/about.css">
@@ -11,10 +11,9 @@
         <link rel="stylesheet" href="css/comments.css">
         <link rel="stylesheet" href="css/contact.css">
         <link rel="stylesheet" href="css/footer.css">
-        <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+        <link rel="stylesheet" href="css/responsive.css">
         <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-        <link href="https://fonts.google.com/specimen/Orbitron" rel="stylesheet">
         <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
         <title>Bao-Huan Tran's Portfolio Website</title>
 
@@ -71,7 +70,7 @@
                     </div>
 
                     <div class="socials">
-                        <a class="gmail-icon" id="myGmail" href="#" target="_blank"> 
+                        <a class="gmail-icon" id="myGmail" href="https://mail.google.com/mail/?view=cm&to=bhtp2004@gmail.com" target="_blank"> 
                             <img alt="gmail" src="images/gmail.svg">
                         </a>
                         <a href="https://github.com/ba0o0" target="_blank"> 
@@ -271,7 +270,7 @@
                         </li>
                         <li>
                             <a class="tooltip tooltip-top" data-tip="HTML">
-                                <img alt="HTML" src="images/html.png">
+                                <img alt="HTML" src="images/html.svg">
                             </a>
                         </li>
 
@@ -327,57 +326,57 @@
                             </a>
                         </li>
                         <li>
-                            <a class="tooltip tooltip-bottom" data-tip="Grafana">
+                            <a class="tooltip tooltip-top" data-tip="Grafana">
                                 <img alt="Grafana" src="images/grafana.svg">
                             </a>
                         </li>
                         <li>
-                            <a class="tooltip tooltip-bottom" data-tip="Prometheus">
+                            <a class="tooltip tooltip-top" data-tip="Prometheus">
                                 <img alt="Prometheus" src="images/prometheus.svg">
                             </a>
                         </li>
                         <li>
-                            <a class="tooltip tooltip-bottom" data-tip="Jenkins">
+                            <a class="tooltip tooltip-top" data-tip="Jenkins">
                                 <img alt="Jenkins" src="images/jenkins.svg">
                             </a>
                         </li>
                         <li>
-                            <a class="tooltip tooltip-bottom" data-tip="Atlassian Tools">
+                            <a class="tooltip tooltip-top" data-tip="Atlassian Tools">
                                 <img alt="Atlassian Tools" src="images/atlassian.svg">
                             </a>
                         </li>
                         <li>
-                            <a class="tooltip tooltip-bottom" data-tip="MongoDB">
+                            <a class="tooltip tooltip-top" data-tip="MongoDB">
                                 <img alt="MongoDB" src="images/mongodb.svg">
                             </a>
                         </li>
                         <li>
-                            <a class="tooltip tooltip-bottom" data-tip="Linux">
+                            <a class="tooltip tooltip-top" data-tip="Linux">
                                 <img alt="Linux" src="images/linux.svg">
                             </a>
                         </li>
                         <li>
-                            <a class="tooltip tooltip-bottom" data-tip="IDA Pro">
+                            <a class="tooltip tooltip-top" data-tip="IDA Pro">
                                 <img alt="IDA Pro" src="images/ida.png">
                             </a>
                         </li>
                         <li>
-                            <a class="tooltip tooltip-bottom" data-tip="Ghridra">
+                            <a class="tooltip tooltip-top" data-tip="Ghridra">
                                 <img alt="Ghridra" src="images/ghidra.png">
                             </a>
                         </li>
                         <li>
-                            <a class="tooltip tooltip-bottom" data-tip="Wireshark">
+                            <a class="tooltip tooltip-top" data-tip="Wireshark">
                                 <img alt="Wireshark" src="images/wireshark.png">
                             </a>
                         </li>
                         <li>
-                            <a class="tooltip tooltip-bottom" data-tip="VMware">
+                            <a class="tooltip tooltip-top" data-tip="VMware">
                                 <img alt="VMware" src="images/vmware.svg">
                             </a>
                         </li>
                         <li>
-                            <a class="tooltip tooltip-bottom" data-tip="ProcMon">
+                            <a class="tooltip tooltip-top" data-tip="ProcMon">
                                 <img alt="ProcMon" src="images/procmon.webp">
                             </a>
                         </li>
@@ -508,26 +507,26 @@
 
             <form id="comments-form" action="http://localhost:8080/comment" method="post">
                 <div id="comments-input-box">
-                    <ul>
-                        <li>
+                        <div class="form-field">
                             <div class="prose"><h3>Name:</h3></div>
                             <input id="name-input" type="text" name="name" placeholder="ex. Ichiko Aoba">
-                        </li>
-                        <li>
+                        </div>
+                        <div class="form-field">
                             <div class="prose"><h3>Message:</h3></div>
                             <input id="message-input" type="text" name="message" placeholder="Write message here ...">
-                        </li>
-                        <li>
+                        </div>
+                        <div class="submit-container">
                             <button id="submit-btn" class="btn">Submit</button>
-                        </li>
-                    </ul>
+                        </div>
                 </div>
             </form>
 
-            <div class="pagination">
-                <button id="prev-btn" class="btn">Previous</button>
-                <span id="page-info"></span>
-                <button id="next-btn" class="btn">Next</button>
+            <div class="pagination-container">
+                <div class="pagination">
+                    <button id="prev-btn" class="btn">Previous</button>
+                    <span id="page-info"></span>
+                    <button id="next-btn" class="btn">Next</button>
+                </div>
             </div>
             
             <div class="comment-section">

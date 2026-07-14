@@ -6,18 +6,18 @@
     top: 30px;
     padding-left: 2rem;
     padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding-bottom: 2rem;
     padding-right: 2rem;
     border-radius: 20px;
     background-color: rgb(3, 3, 27);
     width: 47vw;
+    gap: 1rem;
 }
-.comment-form ul {
-    display: flex;
+.comment-form .form-field {
+    display: flex !important;
     flex-direction: row;
     align-items: flex-start;
     width: 100%;
-    gap: 10rem !important;
 }
 #comments li{
     display: inline-block;
@@ -26,13 +26,10 @@
     margin-bottom: 5%;
     padding: 0;
 }
-#comments-form li:last-child {
-    position: relative;
-    bottom: 1rem;
-    left: 5%;
-}
 #comments #submit-btn{
     position: relative;
+    top: 1rem;
+    margin-left: 1rem;
     width: 9vw;
     align-self: flex-start;
     background-color: rgb(59, 59, 85) !important;
@@ -66,7 +63,9 @@
 
 /*Prev and Next button*/
 .pagination-container{
+    height: 100%;
     width: 100%;
+    padding-top: 3rem;
     padding-right: 12rem;
     display: flex;
     justify-content: flex-end;

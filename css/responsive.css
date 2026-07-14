@@ -226,17 +226,39 @@
     #comments-input-box{
         display: flex;
         flex-direction: column;
+        padding-top: 1rem;
+        height: 31vh;
+        gap: .5rem;
     }
-    #comments-input-box ul {
-        flex-direction: column !important;
-        align-items: stretch;   /* optional: makes inputs/button full-width of the box */
-        gap: 1rem;              /* adjust spacing for stacked layout */
+    #name-input{
+        width: 15vw;
     }
-    #comments li:last-child {
-        margin-left: 0;         /* undo the auto right-push, not needed when stacked */
+    #message-input::placeholder, #name-input::placeholder{
+        font-size: .8rem;
+    }
+    #comments-input-box .submit-container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    #comments-input-box #submit-btn {
+        top: 0;
+        width: 30vw;
+        margin-top: 1rem;
+        margin-left: 0;         
         margin-right: 0;
-        align-self: flex-end;   /* or flex-start/center, wherever you want the button to sit */
+        margin-bottom: 1rem;
     }
+    .pagination{
+        gap: .5rem;
+    }
+    .pagination-container{
+        padding-right: 9.5rem;
+    }
+    .pagination .btn {
+        width: 5rem;
+    }
+    
 
 }
 
@@ -396,6 +418,14 @@
     }
     .programming-langs .tooltip:before {
         font-size: 0.5rem;
+    }
+
+    /*COMMENT*/
+    #name-input{
+        width: 20vw;
+    }
+    #message-input{
+        width: 30vw;
     }
 
     /*CONTACT*/

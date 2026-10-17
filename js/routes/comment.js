@@ -9,22 +9,47 @@ const commentFilter = new Filter({
             languages: ['english']
 });
 
+const MAX_NAME = 50;
+const MAX_MESSAGE = 500;
+
 router.post('/', async (req, res) => {
     const name = req.body.name;
     const message = req.body.message;
     
     console.log ("Name: ", name, ", Message:", message);
 
+    // Checks name and message are strings
+    if (typeof name !== 'string' || typeof message !== 'string'){
+        return res.status(400).json({message: 'Invalid input.'})
+    }
+
+        const cleanName = name.trim();
+    const cleanMessage = message.trim();
+
+    // Presence + length
+    if (!cleanName || !cleanMessage) {
+        return res.status(400).json({ message: 'Name and message are required.' });
+    }
+    if (cleanName.length > MAX_NAME || cleanMessage.length > MAX_MESSAGE) {
+        return res.status(400).json({
+            message: `Name must be under ${MAX_NAME} and message under ${MAX_MESSAGE} characters.`
+        });
+    }
+
+    // Reject HTML-looking input (see trade-off below)
+    if (/[<>]/.test(cleanName) || /[<>]/.test(cleanMessage)) {
+        return res.status(400).json({ message: 'Please don\'t use < or > characters.' });
+    }
+
     try{
-        const newComment = new Comment({name, message});
 
         //checkProfanity
-        const profanStatus = checkProfanity(`${name} ${message}`, commentFilter);
+        const profanStatus = checkProfanity(`${cleanName} ${cleanMessage}`, commentFilter);
         if(profanStatus.containsProfanity){
             res.json({message:"WHAT DID I SAY, SHAME ON YOU: Your message was detect as inappropriate!"});
             return;
         }
-
+        const newComment = new Comment({cleanName, cleanMessage});
         await newComment.save();
 
         res.json({message: 'Thank You for leaving a comment!'});

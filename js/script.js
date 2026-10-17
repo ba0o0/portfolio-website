@@ -126,19 +126,24 @@ async function loadComments(page = 1){
 
     data.comments.forEach(comment => {
       const date = new Date(comment.timestamp).toLocaleString();
-      commentSection.innerHTML += 
+      li.innerHTML += 
       `<li>
           <div class="prose">
             <div class="comment">
               <div class="comment-header">
-                <h2>${comment.name}</h2>
-                <p>${date}</p>
+                <h2></h2>
+                <p></p>
               </div>
-              <h4>${comment.message}</h4>
+              <h4></h4>
             </div>
           </div>
         </li>`;
-      
+
+        li.querySelector('h2').textContent = comment.name;
+        li.querySelector('p').textContent = date;
+        li.querySelector('h4').textContent = comment.message;
+
+        commentSection.append(li);
     });
     // update pagination buttons
     document.getElementById('page-info').textContent = `Page ${data.currentPage} of ${data.totalPages}`;

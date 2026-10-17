@@ -26,7 +26,6 @@ app.use((req, res, next) =>{
 });
 
 app.use(express.json());
-app.use(cors());
 
 // Middleware to parse form data
 app.use(express.urlencoded({ extended: true }));

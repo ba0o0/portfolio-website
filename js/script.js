@@ -66,7 +66,7 @@ document.getElementById('contact-form').addEventListener('submit', async (e) => 
   const email = document.getElementById('email-input').value;
 
   try{
-    const response = await fetch(`${API_URL}contact`, {
+    const response = await fetch(`${API_URL}/contact`, {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
       body:  JSON.stringify({email})

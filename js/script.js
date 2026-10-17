@@ -126,6 +126,7 @@ async function loadComments(page = 1){
 
     data.comments.forEach(comment => {
       const date = new Date(comment.timestamp).toLocaleString();
+      const li = document.createElement('li');
       li.innerHTML += 
       `<li>
           <div class="prose">
